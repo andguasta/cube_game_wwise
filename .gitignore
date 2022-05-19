@@ -9,6 +9,10 @@
 #Executable of the game
 cube_client
 
+#WwiseProject
+cube_wwise_project/Originals/*
+cube_wwise_project/Actor-Mixer\ Hierarchy/TestSoundDesign.wwu
+
 #Libraries at the moment
 */enet
 */include
