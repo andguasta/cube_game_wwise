@@ -1,8 +1,20 @@
-CXX=g++
-CXXOPTFLAGS=-Wall -O3 -fsigned-char -fomit-frame-pointer
-CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include `sdl-config --cflags`
+CXX=clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses
+WWISESDK=../SDK
+CXXOPTFLAGS=-g -fsigned-char
+CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include -I../SDL2/include -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX \
+-I$(WWISESDK)/samples/SoundEngine/Common
+CFLAGS=-I../enet/include -DHAS_SOCKLEN_T
 
-CLIENT_LIBS=-L../enet -lenet `sdl-config --libs` -lSDL_image -lSDL_mixer -lz -lGL -lGLU 
+CLIENT_LIBS=-L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib \
+	../jpeg-9e/libjpeg.a -lz -lSDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation \
+	-lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral \
+	-lAkAACDecoder -lAkSoundSeedWindSource -lAkAudioInputSource -lAkMeterFX -lAkSoundSeedWooshSource \
+	-lAkCompressorFX -lAkStereoDelayFX -lAkConvolutionReverbFX -lAkParametricEQFX \
+	-lAkDelayFX -lAkPeakLimiterFX -lAkTimeStretchFX -lAkExpanderFX -lAkPitchShifterFX -lAkToneSource \
+	-lAkFlangerFX -lAkRoomVerbFX -lAkTremoloFX -lAkGainFX -lAkSilenceSource -lAkVorbisDecoder \
+	-lAkGuitarDistortionFX -lAkSineSource -lAkHarmonizerFX \
+	-lAkMatrixReverbFX -lAkSoundSeedImpactFX -lAkRecorderFX -lAkSynthOneSource
+		
 CLIENT_OBJS= \
 	client.o \
 	clientextras.o \
@@ -35,32 +47,43 @@ CLIENT_OBJS= \
 	worldio.o \
 	worldlight.o \
 	worldocull.o \
-	worldrender.o
+	worldrender.o \
+	$(WWISESDK)/samples/SoundEngine/Common/AkFileLocationBase.o \
+	$(WWISESDK)/samples/SoundEngine/Common/AkMultipleFileLocation.o \
+	$(WWISESDK)/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o
 
-SERVER_LIBS=-L../enet -lenet
+ENET_OBJS= \
+	../enet/callbacks.o \
+	../enet/memory.o \
+	../enet/protocol.o \
+	../enet/host.o \
+	../enet/packet.o \
+	../enet/unix.o \
+	../enet/list.o \
+	../enet/peer.o \
+	../enet/win32.o \
+
+SERVER_LIBS=
 SERVER_OBJS= \
 	standalone.o \
 	serverms.o \
 	server.o \
 	tools.o
 
-default: all
+default: client
 
-all: enet client server
-
-enet:
-	-make -C ../enet all
+all: client
 
 clean:
-	-rm -f $(SERVER_OBJS) $(CLIENT_OBJS) cube_server cube_client
+	-rm -f $(SERVER_OBJS) $(CLIENT_OBJS) $(ENET_OBJS) cube_server ../../cube_game/cube_client
 	-make -C ../enet/ clean
 
 standalone.o:
 	$(CXX) $(CXXFLAGS) -DSTANDALONE -o standalone.o -c serverutil.cpp
 
-client: $(CLIENT_OBJS)
-	$(CXX) $(CXXFLAGS) -o cube_client $(CLIENT_OBJS) $(CLIENT_LIBS)
+client: $(CLIENT_OBJS) $(ENET_OBJS) 
+	$(CXX) $(CXXFLAGS) -o ../../cube_game/cube_client $(CLIENT_OBJS) $(ENET_OBJS) $(CLIENT_LIBS)
 
-server: $(SERVER_OBJS)
-	$(CXX) $(CXXFLAGS) -o cube_server $(SERVER_OBJS) $(SERVER_LIBS)  
+server: $(SERVER_OBJS) $(ENET_OBJS)
+	$(CXX) $(CXXFLAGS) -o cube_server $(SERVER_OBJS) $(ENET_OBJS) $(SERVER_LIBS)  
 	

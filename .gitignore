@@ -3,6 +3,12 @@
 /cube_game/soundbanks/*
 !/cube_game/soundbanks/.gitkeep
 
+#This file is written by the game at the end of every game
+/cube_game/config.cfg
+
+#Executable of the game
+cube_client
+
 #Libraries at the moment
 */enet
 */include
