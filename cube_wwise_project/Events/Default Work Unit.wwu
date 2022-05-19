@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{23FA1438-4CCA-475E-A2B7-8785911E3DF2}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{23FA1438-4CCA-475E-A2B7-8785911E3DF2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Foot_Player" ID="{422C7BE7-80EF-46E0-8BF3-06FC1EC5340C}">
+					<ChildrenList>
+						<Action Name="" ID="{02A8CE97-1EC6-4CB5-ADC1-6128E59E3656}" ShortID="256392108">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootDirt" ID="{F98FCA95-B9A5-4384-8A9B-E9A1F3FAFA47}" WorkUnitID="{8A813850-131C-41F2-85DD-7DC7D39F4130}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

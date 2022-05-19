@@ -1,0 +1,1269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046DDC29AF29B8E20B4ADAC7 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 055AE0AB8FE475F83FF3CED8 /* server.cpp */; };
+		06987B84DEDCCFF673221DBC /* entities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8B4A45DD39E9E118E3C2D /* entities.cpp */; };
+		07C1F299750DD8A4850C0D4B /* packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E88D93A65E43A47AF8DB093 /* packet.c */; };
+		0B1BEAC418CF81FD0A985DE0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED02069D3D2EC3B7A29E4985 /* CoreAudio.framework */; };
+		0CBE3C59E653D17796BEF57B /* jdtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 869E7E249656982D836066A5 /* jdtrans.c */; };
+		0F1D098C32F1B536C464565D /* rendermd2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 818FF056B49BF0A8FADD483E /* rendermd2.cpp */; };
+		0F7010C32235AC56F79C639E /* worldlight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0463D698A29885D486466E17 /* worldlight.cpp */; };
+		11AEEF85C7EDE1FFA16F3B7A /* jdsample.c in Sources */ = {isa = PBXBuildFile; fileRef = BDABBB425688E764C19D136C /* jdsample.c */; };
+		14A9162A1AA8084E33B1A187 /* jdcoefct.c in Sources */ = {isa = PBXBuildFile; fileRef = BC3AE10C4F47E59EF3D1A682 /* jdcoefct.c */; };
+		1B4E07C38D82B19EDDBA924B /* jidctflt.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CC672942D479BBE421B0308 /* jidctflt.c */; };
+		209FFD81E49C04FBD5C035F3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0436599AB82AA692F8509CF6 /* CoreFoundation.framework */; };
+		25D1FBA293B0CC3C60FAF01C /* jctrans.c in Sources */ = {isa = PBXBuildFile; fileRef = E78C48CD514B8BF1F81CC6B6 /* jctrans.c */; };
+		2C131862A481B3BB614DE588 /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F858174A315F96E29944F493 /* world.cpp */; };
+		384821C43510BECAB30B9F47 /* jdinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 7822781C9772C54446D9DC9E /* jdinput.c */; };
+		3EAC7258D11BB41DFD464BAB /* jdmaster.c in Sources */ = {isa = PBXBuildFile; fileRef = EFB3A5260B920A4336AFBC7D /* jdmaster.c */; };
+		412E8263A089692E6776BBD9 /* jutils.c in Sources */ = {isa = PBXBuildFile; fileRef = CA6B76C56C6CBC2FA0EAD5B9 /* jutils.c */; };
+		41D46D49DB5A280EF647EA17 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43B6729243292F3C64E65722 /* main.cpp */; };
+		430A15CAE0C3FA3CE2E958BB /* jdhuff.c in Sources */ = {isa = PBXBuildFile; fileRef = DDABD742F16346DC8F371EA9 /* jdhuff.c */; };
+		455A9AD77BFC277870AA5C46 /* jdmerge.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1820CEC76A62C44484ADF /* jdmerge.c */; };
+		462D2ECEC0213FA81FDDF528 /* renderextras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74339367C65E74F30AA990B0 /* renderextras.cpp */; };
+		48B28BAF12AAFEA4770F6753 /* win32.c in Sources */ = {isa = PBXBuildFile; fileRef = B8CC1C82068A0462052EC3F0 /* win32.c */; };
+		48F537FB72CA8221EBCC9AE6 /* jdphuff.c in Sources */ = {isa = PBXBuildFile; fileRef = 30716FD58E3164355254AC0B /* jdphuff.c */; };
+		4A0D057BFF0AF82143F8B27D /* jquant1.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F13F6294581F6ED1B1F0FE9 /* jquant1.c */; };
+		4C73EEA6EBCED3FECCAA1809 /* rendergl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A1C6825A9CE8A7FB1CF6A /* rendergl.cpp */; };
+		4CB41F9F8E6EA7D1163D5439 /* jdmarker.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F7EAA60C97BB640BFA97F /* jdmarker.c */; };
+		5047CEB79F029E578C193A14 /* jcmaster.c in Sources */ = {isa = PBXBuildFile; fileRef = 366020BECA57976F9C1BCC99 /* jcmaster.c */; };
+		50A2F9FDF3D0415207CEF15B /* jdapistd.c in Sources */ = {isa = PBXBuildFile; fileRef = 68B9B0324EB7D0C1662CA1D7 /* jdapistd.c */; };
+		51B194809D8542F6FADF9B17 /* serverbrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 608DAAEFF1D89B4255880741 /* serverbrowser.cpp */; };
+		523CBDBD295210785A96AD02 /* worldio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B8792F85F618EF7578606A /* worldio.cpp */; };
+		52614565BCB26245E324FE79 /* command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A64C22AE4684888C57994E2 /* command.cpp */; };
+		544DBFC578FAB46F09B14E36 /* jidctint.c in Sources */ = {isa = PBXBuildFile; fileRef = 47ECDED92B3AC486FF42F82F /* jidctint.c */; };
+		568879AC43220FFBDD5309F3 /* sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 470CEF3FF351F972B47DABB3 /* sound.cpp */; };
+		58938A4182D6F9A96386CD30 /* jdatadst.c in Sources */ = {isa = PBXBuildFile; fileRef = C2F31AA3A9F0B1FACD752F2A /* jdatadst.c */; };
+		5A5A99F550C91715166BAC95 /* jcomapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7867033C1D1C74DB6DBF8 /* jcomapi.c */; };
+		67B0D1DB8B8D9B14713E301C /* jcinit.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FEB554CDF3FD5C0776D703 /* jcinit.c */; };
+		6BA58E14242CA373F970C858 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C568E1CD3F22BDCC7DC3D /* list.c */; };
+		6CB7765897417BE42B692EF7 /* jcphuff.c in Sources */ = {isa = PBXBuildFile; fileRef = 13839FC7903D5F9F11C70EB2 /* jcphuff.c */; };
+		70C5CD5B9EF0F23914E7853E /* rendercubes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 060DEABF2A84278A1654817A /* rendercubes.cpp */; };
+		70CC8D2F6C7618E8766A85FE /* jccolor.c in Sources */ = {isa = PBXBuildFile; fileRef = BA1B1EABD4FC9627CF57F57C /* jccolor.c */; };
+		7325842E6DCCCFADE40A16FD /* jfdctint.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D05D83C52D7082EF796298B /* jfdctint.c */; };
+		7AE175E701160111F52B8643 /* tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5B51F60C113B47898A5EE2A /* tools.cpp */; };
+		7E5929B3D9E371A5ED827035 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E75752A1D858C07C8657 /* client.cpp */; };
+		8297E0BC24DAE4656566ADB3 /* jcmarker.c in Sources */ = {isa = PBXBuildFile; fileRef = A9268FAA1A5D96019B546771 /* jcmarker.c */; };
+		8384B771DAF725D9D7AD3D59 /* callbacks.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FEF2FD157C3B3E1DE8367 /* callbacks.c */; };
+		8606372C8D1EE8A685772A6A /* rendertext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0A4A31ACA6D3AE2A1F0FC2B /* rendertext.cpp */; };
+		8B2CB38F93D1C2D82190E0EF /* clients2c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39141F3CC9A2E03682CBCCCE /* clients2c.cpp */; };
+		8E8D04C84A978ABE026AD99D /* weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92C434FB540037E77D5323C4 /* weapon.cpp */; };
+		9003395F62D91CEAF4E4AA28 /* jcapistd.c in Sources */ = {isa = PBXBuildFile; fileRef = 41195255E63D3F47E818E605 /* jcapistd.c */; };
+		927BD5A1CDFBDBC4DE32C2A1 /* jfdctflt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FB980848E37099B6BCF74 /* jfdctflt.c */; };
+		93FD2033AC787D98A5969300 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CAAB948A6E2D5E3E67CA34 /* AudioUnit.framework */; };
+		97AF33FC1B14503184CB9107 /* jcapimin.c in Sources */ = {isa = PBXBuildFile; fileRef = 355FB546A414E9F2018709CC /* jcapimin.c */; };
+		996C34A0B32A526AC3990DE4 /* jidctfst.c in Sources */ = {isa = PBXBuildFile; fileRef = D26C85AB2C2E86B3D5C0562E /* jidctfst.c */; };
+		99C4B80807CC753811284DAD /* editing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8058B89E77E4E6421A5624E /* editing.cpp */; };
+		9A096F6840F08D2BD426F147 /* AkDefaultIOHookBlocking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56B69D4A25BDB84AB3A927D8 /* AkDefaultIOHookBlocking.cpp */; };
+		9B9EBD006E9C5BF1E07DBA67 /* jcdctmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C043019235988E24BA14C /* jcdctmgr.c */; };
+		A12FB3D47DB9AB8AB7476B89 /* AkMultipleFileLocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB939E2B6BD7F0B6F844AAC1 /* AkMultipleFileLocation.cpp */; };
+		A6A16DADA2B5ECE35255B6FC /* jdcolor.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7B72186BF843CA25AC044 /* jdcolor.c */; };
+		A828BA8CFB3CEFDBBDEBA2C3 /* jcparam.c in Sources */ = {isa = PBXBuildFile; fileRef = 5620432FA77377C813B3326E /* jcparam.c */; };
+		A8A72CDF765899A5973219D0 /* jerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 650629ABEC2EAE5B14B72F31 /* jerror.c */; };
+		AC0BE0BA70A156D92016136D /* worldrender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE9CED81533EF7241269374B /* worldrender.cpp */; };
+		AD759D53F520EFBCB6C63412 /* jcprepct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD39D3F64FA94862B1B9D /* jcprepct.c */; };
+		AED256D68575C3E311E35880 /* clientextras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E23DD1EA4FE58FE5244A533 /* clientextras.cpp */; };
+		B2721D85CA11243FC6EE5047 /* renderparticles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF1BFF752B3E6C62F5CB110 /* renderparticles.cpp */; };
+		B3434BBE775BCF4B47998902 /* monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF646E098BE63CBB1594095F /* monster.cpp */; };
+		B9E1CE1BE8EF7E35159AAD94 /* savegamedemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 506CA246EEF060999A8CED57 /* savegamedemo.cpp */; };
+		BAEA82ECBDCF5093FF7B2607 /* peer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EE90B1BADB5C087381A9C15 /* peer.c */; };
+		BECF0E0326E4AC94904BC313 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 78CACEE82A31F908A0C8184C /* memory.c */; };
+		C622A303A5C2DDEC8DBC0E57 /* physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E9C6AE68FF194A0BE7166C /* physics.cpp */; };
+		C70C22C04A37C4381E9DF1D8 /* jfdctfst.c in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D9F606340D87785FABA3 /* jfdctfst.c */; };
+		C89B3836B049A771CF8C8705 /* protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = ED5163C0490FFB9BE03F862F /* protocol.c */; };
+		C8BD0D93206AD4716F300A4E /* jquant2.c in Sources */ = {isa = PBXBuildFile; fileRef = B36F1078EB81D0A61E17F1FA /* jquant2.c */; };
+		C9C08B20CB3F5960F7D4CF3F /* menus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D46B7145E8BF5B4CC906E884 /* menus.cpp */; };
+		CF5AF4B0EB3082D75369F38B /* jddctmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = 291BD74A1A51A39868BC953F /* jddctmgr.c */; };
+		D0471E543424C71C6B202876 /* host.c in Sources */ = {isa = PBXBuildFile; fileRef = 9073B26BE2B490357F70AA08 /* host.c */; };
+		D1203DE1391A2F2A32A929BD /* jidctred.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD8CE1BF2E3EE5A67421B1 /* jidctred.c */; };
+		D950D2136962A07586FF1435 /* jdatasrc.c in Sources */ = {isa = PBXBuildFile; fileRef = D4182AC00B5FE7DBF87541E1 /* jdatasrc.c */; };
+		D9B620030C0405CE37349CC6 /* worldocull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2851830826936C1C019F80A /* worldocull.cpp */; };
+		DAB5645C033CFF2E25F6A822 /* jdmainct.c in Sources */ = {isa = PBXBuildFile; fileRef = 81364B8C101E9E32FA785667 /* jdmainct.c */; };
+		DB100097655C54C0A0B496F0 /* jdpostct.c in Sources */ = {isa = PBXBuildFile; fileRef = 2550D270F82AE3F6103D5DC4 /* jdpostct.c */; };
+		DD5F4DE76DBCBD2E40DEB07D /* rndmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A0059BCD182F89137C27295 /* rndmap.cpp */; };
+		DD9839DCFCA5232BD18A014F /* jchuff.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C2194509126C711243E41E1 /* jchuff.c */; };
+		DDADD783B7D53C2F4BC00C36 /* jccoefct.c in Sources */ = {isa = PBXBuildFile; fileRef = C7CB3B96AA90037238A32EEF /* jccoefct.c */; };
+		E12787350EFA0933DDB91FF6 /* jcmainct.c in Sources */ = {isa = PBXBuildFile; fileRef = 498C0638275B119B2CA3BC13 /* jcmainct.c */; };
+		E3F3862D52F2894EEF497543 /* console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4AC5ABF609DA5BBD379E2E0 /* console.cpp */; };
+		E6E4A9EA42129165EFDB24C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5A2FED66DB13038FEA2D6 /* OpenGL.framework */; };
+		E7E1DADB50447BA9B1BA499E /* jmemmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F733520FF2FE8D214E404D /* jmemmgr.c */; };
+		E85C2BFF1D00016EE8AFB168 /* serverutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF2BFB98492077F0B96800 /* serverutil.cpp */; };
+		F092DA3A3D56C747D7C6A252 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63CB65A9C970277BA0FDC67 /* AudioToolbox.framework */; };
+		F19EFCCC2A65E60BF95BB72F /* jdapimin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDE2B31AA1CFDDD00B2291 /* jdapimin.c */; };
+		F1E4809B137AC50F7E5836F9 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B9E45C388639C3C558AB0E /* SDL2.framework */; };
+		F264B540CD62A94A99299EFF /* jcsample.c in Sources */ = {isa = PBXBuildFile; fileRef = A329B5E8A8D79EF32B64D094 /* jcsample.c */; };
+		F418EB435C4FAD3BDBE4C90E /* unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A663A14DEF3D51950B63394 /* unix.c */; };
+		FD0C60C877CDD856025CE63F /* clientgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D8B6CD50CFD5AE7B4E41B27 /* clientgame.cpp */; };
+		FDC7066080E9B8DE0D339DDA /* jmemansi.c in Sources */ = {isa = PBXBuildFile; fileRef = DDFC2D0C049A4FFFC1CA3775 /* jmemansi.c */; };
+		FEA12397C7A37DF183BA7BBC /* serverms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BBCC787218FE549AECD668F /* serverms.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0436599AB82AA692F8509CF6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0463D698A29885D486466E17 /* worldlight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = worldlight.cpp; path = ../worldlight.cpp; sourceTree = "<group>"; };
+		055AE0AB8FE475F83FF3CED8 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = server.cpp; path = ../server.cpp; sourceTree = "<group>"; };
+		060DEABF2A84278A1654817A /* rendercubes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rendercubes.cpp; path = ../rendercubes.cpp; sourceTree = "<group>"; };
+		0CC672942D479BBE421B0308 /* jidctflt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jidctflt.c; path = "../../jpeg-6b/jidctflt.c"; sourceTree = "<group>"; };
+		0D05D83C52D7082EF796298B /* jfdctint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jfdctint.c; path = "../../jpeg-6b/jfdctint.c"; sourceTree = "<group>"; };
+		0F5C568E1CD3F22BDCC7DC3D /* list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = list.c; path = ../../enet/list.c; sourceTree = "<group>"; };
+		13839FC7903D5F9F11C70EB2 /* jcphuff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcphuff.c; path = "../../jpeg-6b/jcphuff.c"; sourceTree = "<group>"; };
+		1C1A1C6825A9CE8A7FB1CF6A /* rendergl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rendergl.cpp; path = ../rendergl.cpp; sourceTree = "<group>"; };
+		1C4C043019235988E24BA14C /* jcdctmgr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcdctmgr.c; path = "../../jpeg-6b/jcdctmgr.c"; sourceTree = "<group>"; };
+		2550D270F82AE3F6103D5DC4 /* jdpostct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdpostct.c; path = "../../jpeg-6b/jdpostct.c"; sourceTree = "<group>"; };
+		291BD74A1A51A39868BC953F /* jddctmgr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jddctmgr.c; path = "../../jpeg-6b/jddctmgr.c"; sourceTree = "<group>"; };
+		2A64C22AE4684888C57994E2 /* command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = command.cpp; path = ../command.cpp; sourceTree = "<group>"; };
+		2A663A14DEF3D51950B63394 /* unix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unix.c; path = ../../enet/unix.c; sourceTree = "<group>"; };
+		2BEDE2B31AA1CFDDD00B2291 /* jdapimin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdapimin.c; path = "../../jpeg-6b/jdapimin.c"; sourceTree = "<group>"; };
+		2E4FEF2FD157C3B3E1DE8367 /* callbacks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = callbacks.c; path = ../../enet/callbacks.c; sourceTree = "<group>"; };
+		2EF7B72186BF843CA25AC044 /* jdcolor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdcolor.c; path = "../../jpeg-6b/jdcolor.c"; sourceTree = "<group>"; };
+		2FBD8CE1BF2E3EE5A67421B1 /* jidctred.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jidctred.c; path = "../../jpeg-6b/jidctred.c"; sourceTree = "<group>"; };
+		30716FD58E3164355254AC0B /* jdphuff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdphuff.c; path = "../../jpeg-6b/jdphuff.c"; sourceTree = "<group>"; };
+		355FB546A414E9F2018709CC /* jcapimin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcapimin.c; path = "../../jpeg-6b/jcapimin.c"; sourceTree = "<group>"; };
+		366020BECA57976F9C1BCC99 /* jcmaster.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcmaster.c; path = "../../jpeg-6b/jcmaster.c"; sourceTree = "<group>"; };
+		39141F3CC9A2E03682CBCCCE /* clients2c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = clients2c.cpp; path = ../clients2c.cpp; sourceTree = "<group>"; };
+		41195255E63D3F47E818E605 /* jcapistd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcapistd.c; path = "../../jpeg-6b/jcapistd.c"; sourceTree = "<group>"; };
+		43B6729243292F3C64E65722 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		470CEF3FF351F972B47DABB3 /* sound.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sound.cpp; path = ../sound.cpp; sourceTree = "<group>"; };
+		47ECDED92B3AC486FF42F82F /* jidctint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jidctint.c; path = "../../jpeg-6b/jidctint.c"; sourceTree = "<group>"; };
+		498C0638275B119B2CA3BC13 /* jcmainct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcmainct.c; path = "../../jpeg-6b/jcmainct.c"; sourceTree = "<group>"; };
+		4BE76C74E2320193A4443221 /* AkMultipleFileLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkMultipleFileLocation.h; path = ../../../../Wwise/SDK/samples/SoundEngine/Common/AkMultipleFileLocation.h; sourceTree = "<group>"; };
+		4C3F7EAA60C97BB640BFA97F /* jdmarker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdmarker.c; path = "../../jpeg-6b/jdmarker.c"; sourceTree = "<group>"; };
+		4ED7D9F606340D87785FABA3 /* jfdctfst.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jfdctfst.c; path = "../../jpeg-6b/jfdctfst.c"; sourceTree = "<group>"; };
+		506CA246EEF060999A8CED57 /* savegamedemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = savegamedemo.cpp; path = ../savegamedemo.cpp; sourceTree = "<group>"; };
+		50A66D01AAFCFB61B65F7ABA /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tools.h; path = ../tools.h; sourceTree = "<group>"; };
+		5620432FA77377C813B3326E /* jcparam.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcparam.c; path = "../../jpeg-6b/jcparam.c"; sourceTree = "<group>"; };
+		56B69D4A25BDB84AB3A927D8 /* AkDefaultIOHookBlocking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkDefaultIOHookBlocking.cpp; path = ../../../../Wwise/SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.cpp; sourceTree = "<group>"; };
+		5A0059BCD182F89137C27295 /* rndmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rndmap.cpp; path = ../rndmap.cpp; sourceTree = "<group>"; };
+		5BD8B4A45DD39E9E118E3C2D /* entities.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = entities.cpp; path = ../entities.cpp; sourceTree = "<group>"; };
+		5D27A3D47810D9DF196361B7 /* cube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cube.h; path = ../cube.h; sourceTree = "<group>"; };
+		5E88D93A65E43A47AF8DB093 /* packet.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = packet.c; path = ../../enet/packet.c; sourceTree = "<group>"; };
+		608DAAEFF1D89B4255880741 /* serverbrowser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serverbrowser.cpp; path = ../serverbrowser.cpp; sourceTree = "<group>"; };
+		63A2E75752A1D858C07C8657 /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = client.cpp; path = ../client.cpp; sourceTree = "<group>"; };
+		650629ABEC2EAE5B14B72F31 /* jerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jerror.c; path = "../../jpeg-6b/jerror.c"; sourceTree = "<group>"; };
+		68B9B0324EB7D0C1662CA1D7 /* jdapistd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdapistd.c; path = "../../jpeg-6b/jdapistd.c"; sourceTree = "<group>"; };
+		6AF1820CEC76A62C44484ADF /* jdmerge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdmerge.c; path = "../../jpeg-6b/jdmerge.c"; sourceTree = "<group>"; };
+		6CFF2BFB98492077F0B96800 /* serverutil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serverutil.cpp; path = ../serverutil.cpp; sourceTree = "<group>"; };
+		6D8B6CD50CFD5AE7B4E41B27 /* clientgame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = clientgame.cpp; path = ../clientgame.cpp; sourceTree = "<group>"; };
+		71492164A2062324693BCCDB /* protos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = protos.h; path = ../protos.h; sourceTree = "<group>"; };
+		74339367C65E74F30AA990B0 /* renderextras.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = renderextras.cpp; path = ../renderextras.cpp; sourceTree = "<group>"; };
+		7822781C9772C54446D9DC9E /* jdinput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdinput.c; path = "../../jpeg-6b/jdinput.c"; sourceTree = "<group>"; };
+		78CACEE82A31F908A0C8184C /* memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = memory.c; path = ../../enet/memory.c; sourceTree = "<group>"; };
+		7B8FB980848E37099B6BCF74 /* jfdctflt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jfdctflt.c; path = "../../jpeg-6b/jfdctflt.c"; sourceTree = "<group>"; };
+		7E23DD1EA4FE58FE5244A533 /* clientextras.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = clientextras.cpp; path = ../clientextras.cpp; sourceTree = "<group>"; };
+		7F13F6294581F6ED1B1F0FE9 /* jquant1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jquant1.c; path = "../../jpeg-6b/jquant1.c"; sourceTree = "<group>"; };
+		81364B8C101E9E32FA785667 /* jdmainct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdmainct.c; path = "../../jpeg-6b/jdmainct.c"; sourceTree = "<group>"; };
+		818FF056B49BF0A8FADD483E /* rendermd2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rendermd2.cpp; path = ../rendermd2.cpp; sourceTree = "<group>"; };
+		81CED3581D24934683787601 /* CubeMacDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = CubeMacDebug; path = CubeMacDebug; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ECD39D3F64FA94862B1B9D /* jcprepct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcprepct.c; path = "../../jpeg-6b/jcprepct.c"; sourceTree = "<group>"; };
+		84F733520FF2FE8D214E404D /* jmemmgr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jmemmgr.c; path = "../../jpeg-6b/jmemmgr.c"; sourceTree = "<group>"; };
+		869E7E249656982D836066A5 /* jdtrans.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdtrans.c; path = "../../jpeg-6b/jdtrans.c"; sourceTree = "<group>"; };
+		8C2194509126C711243E41E1 /* jchuff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jchuff.c; path = "../../jpeg-6b/jchuff.c"; sourceTree = "<group>"; };
+		8EE90B1BADB5C087381A9C15 /* peer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = peer.c; path = ../../enet/peer.c; sourceTree = "<group>"; };
+		9073B26BE2B490357F70AA08 /* host.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = host.c; path = ../../enet/host.c; sourceTree = "<group>"; };
+		92C434FB540037E77D5323C4 /* weapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = weapon.cpp; path = ../weapon.cpp; sourceTree = "<group>"; };
+		9BBCC787218FE549AECD668F /* serverms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serverms.cpp; path = ../serverms.cpp; sourceTree = "<group>"; };
+		9D2544314A131737F9DA6879 /* Wwise_IDs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Wwise_IDs.h; path = ../Wwise_IDs.h; sourceTree = "<group>"; };
+		9FF7867033C1D1C74DB6DBF8 /* jcomapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcomapi.c; path = "../../jpeg-6b/jcomapi.c"; sourceTree = "<group>"; };
+		A329B5E8A8D79EF32B64D094 /* jcsample.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcsample.c; path = "../../jpeg-6b/jcsample.c"; sourceTree = "<group>"; };
+		A9268FAA1A5D96019B546771 /* jcmarker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcmarker.c; path = "../../jpeg-6b/jcmarker.c"; sourceTree = "<group>"; };
+		AB939E2B6BD7F0B6F844AAC1 /* AkMultipleFileLocation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AkMultipleFileLocation.cpp; path = ../../../../Wwise/SDK/samples/SoundEngine/Common/AkMultipleFileLocation.cpp; sourceTree = "<group>"; };
+		ACF1BFF752B3E6C62F5CB110 /* renderparticles.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = renderparticles.cpp; path = ../renderparticles.cpp; sourceTree = "<group>"; };
+		AE9CED81533EF7241269374B /* worldrender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = worldrender.cpp; path = ../worldrender.cpp; sourceTree = "<group>"; };
+		AF646E098BE63CBB1594095F /* monster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = monster.cpp; path = ../monster.cpp; sourceTree = "<group>"; };
+		B36F1078EB81D0A61E17F1FA /* jquant2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jquant2.c; path = "../../jpeg-6b/jquant2.c"; sourceTree = "<group>"; };
+		B8CC1C82068A0462052EC3F0 /* win32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = win32.c; path = ../../enet/win32.c; sourceTree = "<group>"; };
+		BA1B1EABD4FC9627CF57F57C /* jccolor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jccolor.c; path = "../../jpeg-6b/jccolor.c"; sourceTree = "<group>"; };
+		BC3AE10C4F47E59EF3D1A682 /* jdcoefct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdcoefct.c; path = "../../jpeg-6b/jdcoefct.c"; sourceTree = "<group>"; };
+		BDABBB425688E764C19D136C /* jdsample.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdsample.c; path = "../../jpeg-6b/jdsample.c"; sourceTree = "<group>"; };
+		C2E9C6AE68FF194A0BE7166C /* physics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = physics.cpp; path = ../physics.cpp; sourceTree = "<group>"; };
+		C2F31AA3A9F0B1FACD752F2A /* jdatadst.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdatadst.c; path = "../../jpeg-6b/jdatadst.c"; sourceTree = "<group>"; };
+		C4CAAB948A6E2D5E3E67CA34 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		C5B51F60C113B47898A5EE2A /* tools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tools.cpp; path = ../tools.cpp; sourceTree = "<group>"; };
+		C7CB3B96AA90037238A32EEF /* jccoefct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jccoefct.c; path = "../../jpeg-6b/jccoefct.c"; sourceTree = "<group>"; };
+		C8058B89E77E4E6421A5624E /* editing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = editing.cpp; path = ../editing.cpp; sourceTree = "<group>"; };
+		CA6B76C56C6CBC2FA0EAD5B9 /* jutils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jutils.c; path = "../../jpeg-6b/jutils.c"; sourceTree = "<group>"; };
+		D0A4A31ACA6D3AE2A1F0FC2B /* rendertext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rendertext.cpp; path = ../rendertext.cpp; sourceTree = "<group>"; };
+		D26C85AB2C2E86B3D5C0562E /* jidctfst.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jidctfst.c; path = "../../jpeg-6b/jidctfst.c"; sourceTree = "<group>"; };
+		D4182AC00B5FE7DBF87541E1 /* jdatasrc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdatasrc.c; path = "../../jpeg-6b/jdatasrc.c"; sourceTree = "<group>"; };
+		D46B7145E8BF5B4CC906E884 /* menus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = menus.cpp; path = ../menus.cpp; sourceTree = "<group>"; };
+		D4AC5ABF609DA5BBD379E2E0 /* console.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = console.cpp; path = ../console.cpp; sourceTree = "<group>"; };
+		DDABD742F16346DC8F371EA9 /* jdhuff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdhuff.c; path = "../../jpeg-6b/jdhuff.c"; sourceTree = "<group>"; };
+		DDFC2D0C049A4FFFC1CA3775 /* jmemansi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jmemansi.c; path = "../../jpeg-6b/jmemansi.c"; sourceTree = "<group>"; };
+		E2851830826936C1C019F80A /* worldocull.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = worldocull.cpp; path = ../worldocull.cpp; sourceTree = "<group>"; };
+		E63CB65A9C970277BA0FDC67 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E78C48CD514B8BF1F81CC6B6 /* jctrans.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jctrans.c; path = "../../jpeg-6b/jctrans.c"; sourceTree = "<group>"; };
+		EBF5A2FED66DB13038FEA2D6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		ED02069D3D2EC3B7A29E4985 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		ED5163C0490FFB9BE03F862F /* protocol.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = protocol.c; path = ../../enet/protocol.c; sourceTree = "<group>"; };
+		EFB3A5260B920A4336AFBC7D /* jdmaster.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jdmaster.c; path = "../../jpeg-6b/jdmaster.c"; sourceTree = "<group>"; };
+		EFF8F8BA599BF685D897F316 /* AkDefaultIOHookBlocking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AkDefaultIOHookBlocking.h; path = ../../../../Wwise/SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.h; sourceTree = "<group>"; };
+		F4B8792F85F618EF7578606A /* worldio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = worldio.cpp; path = ../worldio.cpp; sourceTree = "<group>"; };
+		F858174A315F96E29944F493 /* world.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = world.cpp; path = ../world.cpp; sourceTree = "<group>"; };
+		F8B9E45C388639C3C558AB0E /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = System/Library/Frameworks/SDL2.framework; sourceTree = SDKROOT; };
+		F8FEB554CDF3FD5C0776D703 /* jcinit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jcinit.c; path = "../../jpeg-6b/jcinit.c"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0646D1EF77F9E01544DCDC8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F092DA3A3D56C747D7C6A252 /* AudioToolbox.framework in Frameworks */,
+				93FD2033AC787D98A5969300 /* AudioUnit.framework in Frameworks */,
+				0B1BEAC418CF81FD0A985DE0 /* CoreAudio.framework in Frameworks */,
+				209FFD81E49C04FBD5C035F3 /* CoreFoundation.framework in Frameworks */,
+				E6E4A9EA42129165EFDB24C0 /* OpenGL.framework in Frameworks */,
+				F1E4809B137AC50F7E5836F9 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C9FFA62804A8D7D4F18C366 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1FF0A082AEEF6FF5A27CDDC0 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				322A895A3FD6E23A1FE6A8A2 /* .. */,
+				9C478F2109243479F41D65BB /* enet */,
+				610290753788F159A3E7568E /* jpeg-6b */,
+			);
+			name = ..;
+			sourceTree = "<group>";
+		};
+		2495B727E2B5F22E69F28128 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7F610178BE37D977E97FBE28 /* samples */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		322A895A3FD6E23A1FE6A8A2 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				CEF144EDE01B6F9915E38099 /* .. */,
+			);
+			name = ..;
+			sourceTree = "<group>";
+		};
+		610290753788F159A3E7568E /* jpeg-6b */ = {
+			isa = PBXGroup;
+			children = (
+				355FB546A414E9F2018709CC /* jcapimin.c */,
+				41195255E63D3F47E818E605 /* jcapistd.c */,
+				C7CB3B96AA90037238A32EEF /* jccoefct.c */,
+				BA1B1EABD4FC9627CF57F57C /* jccolor.c */,
+				1C4C043019235988E24BA14C /* jcdctmgr.c */,
+				8C2194509126C711243E41E1 /* jchuff.c */,
+				F8FEB554CDF3FD5C0776D703 /* jcinit.c */,
+				498C0638275B119B2CA3BC13 /* jcmainct.c */,
+				A9268FAA1A5D96019B546771 /* jcmarker.c */,
+				366020BECA57976F9C1BCC99 /* jcmaster.c */,
+				9FF7867033C1D1C74DB6DBF8 /* jcomapi.c */,
+				5620432FA77377C813B3326E /* jcparam.c */,
+				13839FC7903D5F9F11C70EB2 /* jcphuff.c */,
+				84ECD39D3F64FA94862B1B9D /* jcprepct.c */,
+				A329B5E8A8D79EF32B64D094 /* jcsample.c */,
+				E78C48CD514B8BF1F81CC6B6 /* jctrans.c */,
+				2BEDE2B31AA1CFDDD00B2291 /* jdapimin.c */,
+				68B9B0324EB7D0C1662CA1D7 /* jdapistd.c */,
+				C2F31AA3A9F0B1FACD752F2A /* jdatadst.c */,
+				D4182AC00B5FE7DBF87541E1 /* jdatasrc.c */,
+				BC3AE10C4F47E59EF3D1A682 /* jdcoefct.c */,
+				2EF7B72186BF843CA25AC044 /* jdcolor.c */,
+				291BD74A1A51A39868BC953F /* jddctmgr.c */,
+				DDABD742F16346DC8F371EA9 /* jdhuff.c */,
+				7822781C9772C54446D9DC9E /* jdinput.c */,
+				81364B8C101E9E32FA785667 /* jdmainct.c */,
+				4C3F7EAA60C97BB640BFA97F /* jdmarker.c */,
+				EFB3A5260B920A4336AFBC7D /* jdmaster.c */,
+				6AF1820CEC76A62C44484ADF /* jdmerge.c */,
+				30716FD58E3164355254AC0B /* jdphuff.c */,
+				2550D270F82AE3F6103D5DC4 /* jdpostct.c */,
+				BDABBB425688E764C19D136C /* jdsample.c */,
+				869E7E249656982D836066A5 /* jdtrans.c */,
+				650629ABEC2EAE5B14B72F31 /* jerror.c */,
+				7B8FB980848E37099B6BCF74 /* jfdctflt.c */,
+				4ED7D9F606340D87785FABA3 /* jfdctfst.c */,
+				0D05D83C52D7082EF796298B /* jfdctint.c */,
+				0CC672942D479BBE421B0308 /* jidctflt.c */,
+				D26C85AB2C2E86B3D5C0562E /* jidctfst.c */,
+				47ECDED92B3AC486FF42F82F /* jidctint.c */,
+				2FBD8CE1BF2E3EE5A67421B1 /* jidctred.c */,
+				DDFC2D0C049A4FFFC1CA3775 /* jmemansi.c */,
+				84F733520FF2FE8D214E404D /* jmemmgr.c */,
+				7F13F6294581F6ED1B1F0FE9 /* jquant1.c */,
+				B36F1078EB81D0A61E17F1FA /* jquant2.c */,
+				CA6B76C56C6CBC2FA0EAD5B9 /* jutils.c */,
+			);
+			name = "jpeg-6b";
+			sourceTree = "<group>";
+		};
+		62A2AADF61CEFC230930DC7A /* POSIX */ = {
+			isa = PBXGroup;
+			children = (
+				56B69D4A25BDB84AB3A927D8 /* AkDefaultIOHookBlocking.cpp */,
+				EFF8F8BA599BF685D897F316 /* AkDefaultIOHookBlocking.h */,
+			);
+			name = POSIX;
+			sourceTree = "<group>";
+		};
+		7F610178BE37D977E97FBE28 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC85F6938C2C0DAEAD9C3C /* SoundEngine */,
+			);
+			name = samples;
+			sourceTree = "<group>";
+		};
+		80CAF8FBC6CAC1B94CE7986D /* Wwise */ = {
+			isa = PBXGroup;
+			children = (
+				2495B727E2B5F22E69F28128 /* SDK */,
+			);
+			name = Wwise;
+			sourceTree = "<group>";
+		};
+		827FB2EBB803F944E24F13DD /* Cube */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0A082AEEF6FF5A27CDDC0 /* .. */,
+				9D2544314A131737F9DA6879 /* Wwise_IDs.h */,
+				63A2E75752A1D858C07C8657 /* client.cpp */,
+				7E23DD1EA4FE58FE5244A533 /* clientextras.cpp */,
+				6D8B6CD50CFD5AE7B4E41B27 /* clientgame.cpp */,
+				39141F3CC9A2E03682CBCCCE /* clients2c.cpp */,
+				2A64C22AE4684888C57994E2 /* command.cpp */,
+				D4AC5ABF609DA5BBD379E2E0 /* console.cpp */,
+				5D27A3D47810D9DF196361B7 /* cube.h */,
+				C8058B89E77E4E6421A5624E /* editing.cpp */,
+				5BD8B4A45DD39E9E118E3C2D /* entities.cpp */,
+				43B6729243292F3C64E65722 /* main.cpp */,
+				D46B7145E8BF5B4CC906E884 /* menus.cpp */,
+				AF646E098BE63CBB1594095F /* monster.cpp */,
+				C2E9C6AE68FF194A0BE7166C /* physics.cpp */,
+				71492164A2062324693BCCDB /* protos.h */,
+				060DEABF2A84278A1654817A /* rendercubes.cpp */,
+				74339367C65E74F30AA990B0 /* renderextras.cpp */,
+				1C1A1C6825A9CE8A7FB1CF6A /* rendergl.cpp */,
+				818FF056B49BF0A8FADD483E /* rendermd2.cpp */,
+				ACF1BFF752B3E6C62F5CB110 /* renderparticles.cpp */,
+				D0A4A31ACA6D3AE2A1F0FC2B /* rendertext.cpp */,
+				5A0059BCD182F89137C27295 /* rndmap.cpp */,
+				506CA246EEF060999A8CED57 /* savegamedemo.cpp */,
+				055AE0AB8FE475F83FF3CED8 /* server.cpp */,
+				608DAAEFF1D89B4255880741 /* serverbrowser.cpp */,
+				9BBCC787218FE549AECD668F /* serverms.cpp */,
+				6CFF2BFB98492077F0B96800 /* serverutil.cpp */,
+				470CEF3FF351F972B47DABB3 /* sound.cpp */,
+				C5B51F60C113B47898A5EE2A /* tools.cpp */,
+				50A66D01AAFCFB61B65F7ABA /* tools.h */,
+				92C434FB540037E77D5323C4 /* weapon.cpp */,
+				F858174A315F96E29944F493 /* world.cpp */,
+				F4B8792F85F618EF7578606A /* worldio.cpp */,
+				0463D698A29885D486466E17 /* worldlight.cpp */,
+				E2851830826936C1C019F80A /* worldocull.cpp */,
+				AE9CED81533EF7241269374B /* worldrender.cpp */,
+				1C9FFA62804A8D7D4F18C366 /* Resources */,
+				A9A80184BAE508CFF0B8ACFA /* Frameworks */,
+				990A9E97AA7ABFD9D0C572FA /* Products */,
+			);
+			name = Cube;
+			sourceTree = "<group>";
+		};
+		990A9E97AA7ABFD9D0C572FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81CED3581D24934683787601 /* CubeMacDebug */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C478F2109243479F41D65BB /* enet */ = {
+			isa = PBXGroup;
+			children = (
+				2E4FEF2FD157C3B3E1DE8367 /* callbacks.c */,
+				9073B26BE2B490357F70AA08 /* host.c */,
+				0F5C568E1CD3F22BDCC7DC3D /* list.c */,
+				78CACEE82A31F908A0C8184C /* memory.c */,
+				5E88D93A65E43A47AF8DB093 /* packet.c */,
+				8EE90B1BADB5C087381A9C15 /* peer.c */,
+				ED5163C0490FFB9BE03F862F /* protocol.c */,
+				2A663A14DEF3D51950B63394 /* unix.c */,
+				B8CC1C82068A0462052EC3F0 /* win32.c */,
+			);
+			name = enet;
+			sourceTree = "<group>";
+		};
+		A9A80184BAE508CFF0B8ACFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63CB65A9C970277BA0FDC67 /* AudioToolbox.framework */,
+				C4CAAB948A6E2D5E3E67CA34 /* AudioUnit.framework */,
+				ED02069D3D2EC3B7A29E4985 /* CoreAudio.framework */,
+				0436599AB82AA692F8509CF6 /* CoreFoundation.framework */,
+				EBF5A2FED66DB13038FEA2D6 /* OpenGL.framework */,
+				F8B9E45C388639C3C558AB0E /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFCC85F6938C2C0DAEAD9C3C /* SoundEngine */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C70CD1E2E4C9D94F3A666 /* Common */,
+				62A2AADF61CEFC230930DC7A /* POSIX */,
+			);
+			name = SoundEngine;
+			sourceTree = "<group>";
+		};
+		CEF144EDE01B6F9915E38099 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				80CAF8FBC6CAC1B94CE7986D /* Wwise */,
+			);
+			name = ..;
+			sourceTree = "<group>";
+		};
+		DE7C70CD1E2E4C9D94F3A666 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB939E2B6BD7F0B6F844AAC1 /* AkMultipleFileLocation.cpp */,
+				4BE76C74E2320193A4443221 /* AkMultipleFileLocation.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9F9387BD03E2BE5AFCEB5F4 /* Cube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2DEAF4359DE283DEF94D7A /* Build configuration list for PBXNativeTarget "Cube" */;
+			buildPhases = (
+				E9D34A94AAC3DEF0FE348B50 /* Resources */,
+				0A09815ECF2910255B2FACFD /* Sources */,
+				0646D1EF77F9E01544DCDC8F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cube;
+			productInstallPath = "$(HOME)/bin";
+			productName = Cube;
+			productReference = 81CED3581D24934683787601 /* CubeMacDebug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Cube" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 827FB2EBB803F944E24F13DD /* Cube */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F9387BD03E2BE5AFCEB5F4 /* CubeMacDebug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9D34A94AAC3DEF0FE348B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A09815ECF2910255B2FACFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12FB3D47DB9AB8AB7476B89 /* AkMultipleFileLocation.cpp in Sources */,
+				9A096F6840F08D2BD426F147 /* AkDefaultIOHookBlocking.cpp in Sources */,
+				8384B771DAF725D9D7AD3D59 /* callbacks.c in Sources */,
+				D0471E543424C71C6B202876 /* host.c in Sources */,
+				6BA58E14242CA373F970C858 /* list.c in Sources */,
+				BECF0E0326E4AC94904BC313 /* memory.c in Sources */,
+				07C1F299750DD8A4850C0D4B /* packet.c in Sources */,
+				BAEA82ECBDCF5093FF7B2607 /* peer.c in Sources */,
+				C89B3836B049A771CF8C8705 /* protocol.c in Sources */,
+				F418EB435C4FAD3BDBE4C90E /* unix.c in Sources */,
+				48B28BAF12AAFEA4770F6753 /* win32.c in Sources */,
+				97AF33FC1B14503184CB9107 /* jcapimin.c in Sources */,
+				9003395F62D91CEAF4E4AA28 /* jcapistd.c in Sources */,
+				DDADD783B7D53C2F4BC00C36 /* jccoefct.c in Sources */,
+				70CC8D2F6C7618E8766A85FE /* jccolor.c in Sources */,
+				9B9EBD006E9C5BF1E07DBA67 /* jcdctmgr.c in Sources */,
+				DD9839DCFCA5232BD18A014F /* jchuff.c in Sources */,
+				67B0D1DB8B8D9B14713E301C /* jcinit.c in Sources */,
+				E12787350EFA0933DDB91FF6 /* jcmainct.c in Sources */,
+				8297E0BC24DAE4656566ADB3 /* jcmarker.c in Sources */,
+				5047CEB79F029E578C193A14 /* jcmaster.c in Sources */,
+				5A5A99F550C91715166BAC95 /* jcomapi.c in Sources */,
+				A828BA8CFB3CEFDBBDEBA2C3 /* jcparam.c in Sources */,
+				6CB7765897417BE42B692EF7 /* jcphuff.c in Sources */,
+				AD759D53F520EFBCB6C63412 /* jcprepct.c in Sources */,
+				F264B540CD62A94A99299EFF /* jcsample.c in Sources */,
+				25D1FBA293B0CC3C60FAF01C /* jctrans.c in Sources */,
+				F19EFCCC2A65E60BF95BB72F /* jdapimin.c in Sources */,
+				50A2F9FDF3D0415207CEF15B /* jdapistd.c in Sources */,
+				58938A4182D6F9A96386CD30 /* jdatadst.c in Sources */,
+				D950D2136962A07586FF1435 /* jdatasrc.c in Sources */,
+				14A9162A1AA8084E33B1A187 /* jdcoefct.c in Sources */,
+				A6A16DADA2B5ECE35255B6FC /* jdcolor.c in Sources */,
+				CF5AF4B0EB3082D75369F38B /* jddctmgr.c in Sources */,
+				430A15CAE0C3FA3CE2E958BB /* jdhuff.c in Sources */,
+				384821C43510BECAB30B9F47 /* jdinput.c in Sources */,
+				DAB5645C033CFF2E25F6A822 /* jdmainct.c in Sources */,
+				4CB41F9F8E6EA7D1163D5439 /* jdmarker.c in Sources */,
+				3EAC7258D11BB41DFD464BAB /* jdmaster.c in Sources */,
+				455A9AD77BFC277870AA5C46 /* jdmerge.c in Sources */,
+				48F537FB72CA8221EBCC9AE6 /* jdphuff.c in Sources */,
+				DB100097655C54C0A0B496F0 /* jdpostct.c in Sources */,
+				11AEEF85C7EDE1FFA16F3B7A /* jdsample.c in Sources */,
+				0CBE3C59E653D17796BEF57B /* jdtrans.c in Sources */,
+				A8A72CDF765899A5973219D0 /* jerror.c in Sources */,
+				927BD5A1CDFBDBC4DE32C2A1 /* jfdctflt.c in Sources */,
+				C70C22C04A37C4381E9DF1D8 /* jfdctfst.c in Sources */,
+				7325842E6DCCCFADE40A16FD /* jfdctint.c in Sources */,
+				1B4E07C38D82B19EDDBA924B /* jidctflt.c in Sources */,
+				996C34A0B32A526AC3990DE4 /* jidctfst.c in Sources */,
+				544DBFC578FAB46F09B14E36 /* jidctint.c in Sources */,
+				D1203DE1391A2F2A32A929BD /* jidctred.c in Sources */,
+				FDC7066080E9B8DE0D339DDA /* jmemansi.c in Sources */,
+				E7E1DADB50447BA9B1BA499E /* jmemmgr.c in Sources */,
+				4A0D057BFF0AF82143F8B27D /* jquant1.c in Sources */,
+				C8BD0D93206AD4716F300A4E /* jquant2.c in Sources */,
+				412E8263A089692E6776BBD9 /* jutils.c in Sources */,
+				7E5929B3D9E371A5ED827035 /* client.cpp in Sources */,
+				AED256D68575C3E311E35880 /* clientextras.cpp in Sources */,
+				FD0C60C877CDD856025CE63F /* clientgame.cpp in Sources */,
+				8B2CB38F93D1C2D82190E0EF /* clients2c.cpp in Sources */,
+				52614565BCB26245E324FE79 /* command.cpp in Sources */,
+				E3F3862D52F2894EEF497543 /* console.cpp in Sources */,
+				99C4B80807CC753811284DAD /* editing.cpp in Sources */,
+				06987B84DEDCCFF673221DBC /* entities.cpp in Sources */,
+				41D46D49DB5A280EF647EA17 /* main.cpp in Sources */,
+				C9C08B20CB3F5960F7D4CF3F /* menus.cpp in Sources */,
+				B3434BBE775BCF4B47998902 /* monster.cpp in Sources */,
+				C622A303A5C2DDEC8DBC0E57 /* physics.cpp in Sources */,
+				70C5CD5B9EF0F23914E7853E /* rendercubes.cpp in Sources */,
+				462D2ECEC0213FA81FDDF528 /* renderextras.cpp in Sources */,
+				4C73EEA6EBCED3FECCAA1809 /* rendergl.cpp in Sources */,
+				0F1D098C32F1B536C464565D /* rendermd2.cpp in Sources */,
+				B2721D85CA11243FC6EE5047 /* renderparticles.cpp in Sources */,
+				8606372C8D1EE8A685772A6A /* rendertext.cpp in Sources */,
+				DD5F4DE76DBCBD2E40DEB07D /* rndmap.cpp in Sources */,
+				B9E1CE1BE8EF7E35159AAD94 /* savegamedemo.cpp in Sources */,
+				046DDC29AF29B8E20B4ADAC7 /* server.cpp in Sources */,
+				51B194809D8542F6FADF9B17 /* serverbrowser.cpp in Sources */,
+				FEA12397C7A37DF183BA7BBC /* serverms.cpp in Sources */,
+				E85C2BFF1D00016EE8AFB168 /* serverutil.cpp in Sources */,
+				568879AC43220FFBDD5309F3 /* sound.cpp in Sources */,
+				7AE175E701160111F52B8643 /* tools.cpp in Sources */,
+				8E8D04C84A978ABE026AD99D /* weapon.cpp in Sources */,
+				2C131862A481B3BB614DE588 /* world.cpp in Sources */,
+				523CBDBD295210785A96AD02 /* worldio.cpp in Sources */,
+				0F7010C32235AC56F79C639E /* worldlight.cpp in Sources */,
+				D9B620030C0405CE37349CC6 /* worldocull.cpp in Sources */,
+				AC0BE0BA70A156D92016136D /* worldrender.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011ADE441910C922D706DDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../../cube;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-Wno-sign-compare";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+					"-Wno-invalid-offsetof",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = CubeMacDebug;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		03837A4061A5C7104EBD3343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../../cube;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-Wno-sign-compare";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+					"-Wno-invalid-offsetof",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = CubeMacRelease;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		30B5943D6FE0703C2B65507F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../../cube;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-Wno-sign-compare";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+					"-Wno-invalid-offsetof",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = CubeMacProfile;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				VALID_ARCHS = x86_64;
+			};
+			name = Profile;
+		};
+		BB7C191A3F220341EEEEA03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					HAS_SOCKLEN_T,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "../../SDL2/include ../../enet/include ../../jpeg-6b ../../../../Wwise/SDK/include ../../../../Wwise/SDK/samples/SoundEngine/POSIX $(inherited)";
+				LIBRARY_SEARCH_PATHS = ../../../../Wwise/SDK/Mac/Debug/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "../../../cubeMac/Debug/obj/$(PREMAKE4_BUILDTARGET_BASENAME)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-Wno-sign-compare";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+					"-Wno-invalid-offsetof",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lAkMusicEngine",
+					"-lAkSineSource",
+					"-lAkTremoloFX",
+					"-lAkGuitarDistortionFX",
+					"-lAkStereoDelayFX",
+					"-lAkMemoryMgr",
+					"-lAkExpanderFX",
+					"-lAkRecorderFX",
+					"-lAkGainFX",
+					"-lAkSynthOneSource",
+					"-lAkMeterFX",
+					"-lAkAudioInputSource",
+					"-lAkMatrixReverbFX",
+					"-lAkVorbisDecoder",
+					"-lAkRoomVerbFX",
+					"-lAkParametricEQFX",
+					"-lAkSpatialAudio",
+					"-lAkPitchShifterFX",
+					"-lAkPeakLimiterFX",
+					"-lAkFlangerFX",
+					"-lAkOpusDecoder",
+					"-lAkStreamMgr",
+					"-lAkToneSource",
+					"-lAkDelayFX",
+					"-lAkTimeStretchFX",
+					"-lAkHarmonizerFX",
+					"-lAkAACDecoder",
+					"-lAkSilenceSource",
+					"-lAkSoundEngine",
+					"-lAkCompressorFX",
+					"-lz",
+					../../../../Wwise/SDK/Mac/Debug/lib/libCommunicationCentral.a,
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = ../../../cube;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		C2372702CE4D9BD34332B86D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					AK_OPTIMIZED,
+					HAS_SOCKLEN_T,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "../../SDL2/include ../../enet/include ../../jpeg-6b ../../../../Wwise/SDK/include ../../../../Wwise/SDK/samples/SoundEngine/POSIX $(inherited)";
+				LIBRARY_SEARCH_PATHS = ../../../../Wwise/SDK/Mac/Release/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "../../../cubeMac/Release/obj/$(PREMAKE4_BUILDTARGET_BASENAME)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-Wno-sign-compare";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+					"-Wno-invalid-offsetof",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lAkMusicEngine",
+					"-lAkSineSource",
+					"-lAkTremoloFX",
+					"-lAkGuitarDistortionFX",
+					"-lAkStereoDelayFX",
+					"-lAkMemoryMgr",
+					"-lAkExpanderFX",
+					"-lAkRecorderFX",
+					"-lAkGainFX",
+					"-lAkSynthOneSource",
+					"-lAkMeterFX",
+					"-lAkAudioInputSource",
+					"-lAkMatrixReverbFX",
+					"-lAkVorbisDecoder",
+					"-lAkRoomVerbFX",
+					"-lAkParametricEQFX",
+					"-lAkSpatialAudio",
+					"-lAkPitchShifterFX",
+					"-lAkPeakLimiterFX",
+					"-lAkFlangerFX",
+					"-lAkOpusDecoder",
+					"-lAkStreamMgr",
+					"-lAkToneSource",
+					"-lAkDelayFX",
+					"-lAkTimeStretchFX",
+					"-lAkHarmonizerFX",
+					"-lAkAACDecoder",
+					"-lAkSilenceSource",
+					"-lAkSoundEngine",
+					"-lAkCompressorFX",
+					"-lz",
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = ../../../cube;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		E0628076E8333F3B7DE9D4BF /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					HAS_SOCKLEN_T,
+				);
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "../../SDL2/include ../../enet/include ../../jpeg-6b ../../../../Wwise/SDK/include ../../../../Wwise/SDK/samples/SoundEngine/POSIX $(inherited)";
+				LIBRARY_SEARCH_PATHS = ../../../../Wwise/SDK/Mac/Debug/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "../../../cubeMac/Profile/obj/$(PREMAKE4_BUILDTARGET_BASENAME)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-Wno-sign-compare";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-write-strings",
+					"-fvisibility-inlines-hidden",
+					"-Wno-invalid-offsetof",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lAkMusicEngine",
+					"-lAkSineSource",
+					"-lAkTremoloFX",
+					"-lAkGuitarDistortionFX",
+					"-lAkStereoDelayFX",
+					"-lAkMemoryMgr",
+					"-lAkExpanderFX",
+					"-lAkRecorderFX",
+					"-lAkGainFX",
+					"-lAkSynthOneSource",
+					"-lAkMeterFX",
+					"-lAkAudioInputSource",
+					"-lAkMatrixReverbFX",
+					"-lAkVorbisDecoder",
+					"-lAkRoomVerbFX",
+					"-lAkParametricEQFX",
+					"-lAkSpatialAudio",
+					"-lAkPitchShifterFX",
+					"-lAkPeakLimiterFX",
+					"-lAkFlangerFX",
+					"-lAkOpusDecoder",
+					"-lAkStreamMgr",
+					"-lAkToneSource",
+					"-lAkDelayFX",
+					"-lAkTimeStretchFX",
+					"-lAkHarmonizerFX",
+					"-lAkAACDecoder",
+					"-lAkSilenceSource",
+					"-lAkSoundEngine",
+					"-lAkCompressorFX",
+					"-lz",
+					../../../../Wwise/SDK/Mac/Profile/lib/libCommunicationCentral.a,
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SYMROOT = ../../../cube;
+				VALID_ARCHS = x86_64;
+			};
+			name = Profile;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7C191A3F220341EEEEA03E /* Debug */,
+				E0628076E8333F3B7DE9D4BF /* Profile */,
+				C2372702CE4D9BD34332B86D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE2DEAF4359DE283DEF94D7A /* Build configuration list for PBXNativeTarget "CubeMacDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011ADE441910C922D706DDA8 /* Debug */,
+				30B5943D6FE0703C2B65507F /* Profile */,
+				03837A4061A5C7104EBD3343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

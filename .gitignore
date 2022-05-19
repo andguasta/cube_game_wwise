@@ -1,0 +1,60 @@
+#---ProjectSpecific
+#soundbanks for the game cube are not committed but folder is included
+/cube_game/soundbanks/*
+!/cube_game/soundbanks/.gitkeep
+
+#Libraries at the moment
+*/enet
+*/include
+*/jpeg*/*
+*/SDL2
+*/zlib*/*
+
+#---MacOs---
+.DS_Store
+
+#---XCODE---
+# User settings
+xcuserdata/
+# Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+# ----C++ Stuff----
+# Prerequisites
+*.d
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+# Precompiled Headers
+*.gch
+*.pch
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+# Fortran module files
+*.mod
+*.smod
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+# Executables
+*.exe
+*.out
+*.app
+
+#---WWise---
+.cache
+.backup
+*.prof
+*.akd
+*.validationcache
+*.wsettings
+GeneratedSoundBanks
+IncrementalSoundBankData.xml
+AutoDetectedSampleRates.cache 
