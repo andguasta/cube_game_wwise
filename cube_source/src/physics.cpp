@@ -234,14 +234,16 @@ void moveplayer(dynent *pl, int moveres, bool local, float curtime)
                 pl->jumpnext = false;
                 pl->vel.z = 1.7f;       // physics impulse upwards
                 if(water) { pl->vel.x /= 8; pl->vel.y /= 8; };      // dampen velocity change even harder, gives correct water feel
-				if(local) snd_clientevent(AK::EVENTS::JUMP);
-                else if(pl->GetMonsterState()) snd_event(AK::EVENTS::JUMP, pl);
+				snd_event("jump", pl);
             }
-            else if(pl->timeinair>800)  // if we land after long time must have been a high jump, make thud sound
+            else if(pl->timeinair>800)   // landing after a small jump
             {
-				if(local) snd_clientevent(AK::EVENTS::LAND);
-				else if (pl->GetMonsterState()) snd_event(AK::EVENTS::LAND, pl);
-            };
+				snd_event("land_big_jump", pl);
+            }
+            else if(pl->timeinair > 200) // landing after a small jump
+            {
+                snd_event("land_small_jump", pl);
+            }
             pl->timeinair = 0;
         }
         else
