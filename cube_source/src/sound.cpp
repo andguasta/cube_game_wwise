@@ -547,6 +547,15 @@ void snd_event(char * name, void * ent )
 	SoundEngine::PostEvent( name, (AkGameObjectID) ent );
 };
 
+// This function get the type of monster and set a switch
+void snd_setswitch (char* s_group, char* s_name, dynent* g_object)
+{
+	SoundEngine::SetSwitch(s_group, s_name, (AkGameObjectID) g_object);
+
+	//conoutf("This is the name of the monster");
+	//conoutf("%s", d->shortname);
+}
+
 //
 // sound-related scripting commands
 //

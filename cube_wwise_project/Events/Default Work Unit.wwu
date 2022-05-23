@@ -4,6 +4,11 @@
 		<WorkUnit Name="Default Work Unit" ID="{23FA1438-4CCA-475E-A2B7-8785911E3DF2}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Foot_Player" ID="{422C7BE7-80EF-46E0-8BF3-06FC1EC5340C}"/>
+				<Event Name="jump" ID="{11F88D6B-C081-41A7-AA25-FE008A963A21}"/>
+				<Event Name="land_small_jump" ID="{76665E0B-B380-482C-A98F-098E9E627B33}"/>
+				<Event Name="land_big_jump" ID="{D1179CB5-F602-4412-B243-7E007E214F2F}"/>
+				<Event Name="spawn_monster" ID="{4DA533EF-91A1-429E-8863-75913B0B3CBD}"/>
+				<Event Name="spawn_player" ID="{F593E529-E90A-4CEA-8371-7D7538764ED7}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
