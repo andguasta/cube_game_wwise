@@ -22,6 +22,18 @@
 						<Switch Name="Right" ID="{096E3250-BEBF-455F-BD5F-7DF77F52D8FB}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Entity" ID="{D7FA8DEA-1AD4-476E-89BB-AAD69CB4335A}">
+					<ChildrenList>						
+						<Switch Name="ogre" ID="{3117E797-C398-4A18-8787-89BD733AFC5A}"/>
+						<Switch Name="rhino" ID="{8E398186-66C6-4C95-A508-CAD28157433E}"/>
+						<Switch Name="rat" ID="{8C760CE7-DA14-4F24-BC74-E9019184A8E8}"/>
+						<Switch Name="slith" ID="{301271D9-00D0-412B-9590-E438516495B8}"/>
+						<Switch Name="bauul" ID="{E6C1C959-E106-4E05-B78B-083067B3CC84}"/>
+						<Switch Name="hellpig" ID="{51E7DEB9-0BF2-4D13-BC02-55AFEC3410EA}"/>
+						<Switch Name="knight" ID="{F7A58CDD-CE79-4282-9D8F-AEA444BAC672}"/>
+						<Switch Name="goblin" ID="{1BF2BB88-97A9-4EC3-9A2C-66FB2995E6BF}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

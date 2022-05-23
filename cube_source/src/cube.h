@@ -288,6 +288,7 @@ enum    // function signatures for script functions, see command.cpp
 #include "Wwise_IDs.h"
 #include <zlib.h>
 #include "protos.h"				// external function decls
+#include "audio.h"
 
 extern void Cube_PasteTextFromClipboard( string buf );
 extern void Cube_SetGamma( float r, float g, float b );

@@ -342,7 +342,9 @@ void spawnplayer(dynent *d)   // place at random spawn. also used by monsters!
 	}
 	else
 	{
-		snd_event( AK::EVENTS::SPAWN_MONSTER, d );
+		//snd_setentity(d);
+        snd_event( AK::EVENTS::SPAWN_MONSTER, d );
+        
 	}
 };
 
