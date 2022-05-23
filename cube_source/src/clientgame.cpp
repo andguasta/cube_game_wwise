@@ -339,6 +339,7 @@ void spawnplayer(dynent *d)   // place at random spawn. also used by monsters!
 	{
 		snd_event( AK::EVENTS::SPAWN_PLAYER, d );
 		snd_gameparam( AK::GAME_PARAMETERS::PLAYERHEALTH, (float) player1->health );
+        snd_setswitch("weapon_type", getWeaponName(d->gunselect), d);
 	}
 	else
 	{

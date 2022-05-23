@@ -23,7 +23,7 @@
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Entity" ID="{D7FA8DEA-1AD4-476E-89BB-AAD69CB4335A}">
-					<ChildrenList>						
+					<ChildrenList>
 						<Switch Name="ogre" ID="{3117E797-C398-4A18-8787-89BD733AFC5A}"/>
 						<Switch Name="rhino" ID="{8E398186-66C6-4C95-A508-CAD28157433E}"/>
 						<Switch Name="rat" ID="{8C760CE7-DA14-4F24-BC74-E9019184A8E8}"/>
@@ -32,6 +32,16 @@
 						<Switch Name="hellpig" ID="{51E7DEB9-0BF2-4D13-BC02-55AFEC3410EA}"/>
 						<Switch Name="knight" ID="{F7A58CDD-CE79-4282-9D8F-AEA444BAC672}"/>
 						<Switch Name="goblin" ID="{1BF2BB88-97A9-4EC3-9A2C-66FB2995E6BF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="weapon_type" ID="{26643D4C-C57C-4459-9BD5-F37AF71232BF}">
+					<ChildrenList>
+						<Switch Name="New_Switch" ID="{B638F196-460F-4EE2-B779-DF8716E0EA32}"/>
+						<Switch Name="fist" ID="{C8274731-B0EB-4A8A-984A-87E24B164707}"/>
+						<Switch Name="shotgun" ID="{A3687A9E-6730-474E-B844-2C1B75CB9E73}"/>
+						<Switch Name="chaingun" ID="{1085D1CB-D1C3-454A-88B2-E7E49D4E8A79}"/>
+						<Switch Name="rocket" ID="{B7A337D0-4D31-49D9-BBDB-71AF6F343FF1}"/>
+						<Switch Name="rifle" ID="{B8806FBD-C2F4-4937-9372-543C2F448A3E}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

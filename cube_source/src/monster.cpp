@@ -82,7 +82,7 @@ dynent *basicmonster(int type, int yaw, int state, int trigger, int move)
     m->anger = 0;
     strcpy_s(m->name, t->nicename);
     monsters.add(m);
-    snd_setswitch("entity", monstertypes[type].name, m);
+    snd_setswitch("entity", monstertypes[type].name, m); //update audio engine on the type of monster
     return m;
 };
 

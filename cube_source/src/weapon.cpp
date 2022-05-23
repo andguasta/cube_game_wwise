@@ -22,6 +22,11 @@ guninfo guns[NUMGUNS] =
     { 1,	0,	0,	 250,  50, 0,   0,  1, "bite"       },
 };
 
+char* getWeaponName(int gunNumber)
+{
+    return guns[gunNumber].name;
+}
+
 void selectgun(int a, int b, int c)
 {
     if(a<-1 || b<-1 || c<-1 || a>=NUMGUNS || b>=NUMGUNS || c>=NUMGUNS) return;
@@ -34,9 +39,12 @@ void selectgun(int a, int b, int c)
     else if(s!=GUN_SG && player1->ammo[GUN_SG]) s = GUN_SG;
     else if(s!=GUN_RIFLE && player1->ammo[GUN_RIFLE]) s = GUN_RIFLE;
     else s = GUN_FIST;
-    if(s!=player1->gunselect) snd_clientevent(AK::EVENTS::WEAPLOAD);
+    if(s!=player1->gunselect)
+    {
+        snd_setswitch("weapon_type", getWeaponName(s), player1);
+        snd_clientevent(AK::EVENTS::WEAPLOAD);
+    } 
     player1->gunselect = s;
-    //conoutf("%s selected", (int)guns[s].name);
 };
 
 int reloadtime(int gun) { return guns[gun].attackdelay; };
