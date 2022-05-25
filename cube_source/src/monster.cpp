@@ -394,6 +394,7 @@ void monsterfootstep( dynent * m, bool right )
 	if(editmode) return;
 	sqr *s = S((int)m->o.x, (int)m->o.y);
 	int material = lookupmaterial( s->ftex );
+    conoutf("%d", s->ftex); // This prints index of texture remove for release
 	if ( material ) 
 		snd_setmaterial( m, material );
 

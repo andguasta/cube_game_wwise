@@ -1,0 +1,5 @@
+Il cielo viene caricato nel cfg con il comando loadsky
+
+To override a keybind inside the autoexec.cfg this is the correct format: bind "M" [edittex 0 -1]
+
+snd_loadmapbank load a bank with the name of the map
