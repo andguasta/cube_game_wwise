@@ -5,6 +5,7 @@
 
 #This file is written by the game at the end of every game
 /cube_game/config.cfg
+/cube_game/server.cfg
 
 #Executable of the game
 cube_client
