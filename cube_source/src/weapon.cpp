@@ -45,6 +45,7 @@ void selectgun(int a, int b, int c)
         snd_clientevent(AK::EVENTS::WEAPLOAD);
     } 
     player1->gunselect = s;
+    snd_update_bullets(player1);
 };
 
 int reloadtime(int gun) { return guns[gun].attackdelay; };
@@ -418,6 +419,7 @@ void shoot(dynent *d, vec &targ)
 		d->gunwait = 250; d->lastattackgun = -1; return; 
 	};
     if(d->gunselect) d->ammo[d->gunselect]--;
+    snd_update_bullets(d);
     vec from = d->o;
     vec to = targ;
     from.z -= 0.2f;    // below eye

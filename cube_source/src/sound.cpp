@@ -547,14 +547,23 @@ void snd_event(char * name, void * ent )
 	SoundEngine::PostEvent( name, (AkGameObjectID) ent );
 };
 
-// This function get the type of monster and set a switch
+// Sets a switch
 void snd_setswitch(char* s_group, char* s_name, dynent* g_object)
 {
 	SoundEngine::SetSwitch(s_group, s_name, (AkGameObjectID) g_object);
-
-	//conoutf("This is the name of the monster");
-	//conoutf("%s", d->shortname);
 }
+
+//Sets an rtpc on a specific game object
+void snd_setrtpc(char* rtpc_name, float value, dynent* g_object)
+{
+	SoundEngine::SetRTPCValue(rtpc_name, value,  (AkGameObjectID) g_object);
+}
+
+void snd_update_bullets(dynent* g_object)
+{
+	snd_setrtpc("bullet_number", g_object->ammo[g_object->gunselect], g_object);
+}
+
 
 //
 // sound-related scripting commands

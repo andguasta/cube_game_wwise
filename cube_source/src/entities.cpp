@@ -207,6 +207,7 @@ void pickup(int n, dynent *d)
             break;
         };
     };
+    snd_update_bullets(d);
 };
 
 void checkitems()
