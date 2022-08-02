@@ -1,12 +1,12 @@
 CXX=clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses
 WWISESDK=../SDK
 CXXOPTFLAGS=-g -fsigned-char
-CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include -I../SDL2/include -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX \
+CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include -F /Library/Frameworks -I /Library/Frameworks/SDL2.framework/Headers -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX \
 -I$(WWISESDK)/samples/SoundEngine/Common
 CFLAGS=-I../enet/include -DHAS_SOCKLEN_T
 
 CLIENT_LIBS=-L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib \
-	../jpeg-9e/libjpeg.a -lz -lSDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation \
+	../jpeg-9e/libjpeg.a -lz -framework SDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation \
 	-lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral \
 	-lAkAACDecoder -lAkSoundSeedWindSource -lAkAudioInputSource -lAkMeterFX -lAkSoundSeedWooshSource \
 	-lAkCompressorFX -lAkStereoDelayFX -lAkConvolutionReverbFX -lAkParametricEQFX \
