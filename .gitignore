@@ -14,13 +14,6 @@ cube_client
 cube_wwise_project/Originals/*
 cube_wwise_project/Actor-Mixer\ Hierarchy/TestSoundDesign.wwu
 
-#Libraries at the moment
-*/enet
-*/include
-*/jpeg*/*
-*/SDL2
-*/zlib*/*
-
 #---MacOs---
 .DS_Store
 
@@ -30,6 +23,11 @@ xcuserdata/
 # Xcode 8 and earlier
 *.xcscmblueprint
 *.xccheckout
+
+#---VS---
+/Win32
+*.vcxproj.user
+.vs/
 
 # ----C++ Stuff----
 # Prerequisites
