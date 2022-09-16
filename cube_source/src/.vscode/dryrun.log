@@ -1,0 +1,88 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/andrea/coding/cube/cube_source/src'
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o client.o client.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o clientextras.o clientextras.cpp
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o clientgame.o clientgame.cpp
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o clients2c.o clients2c.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o command.o command.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o console.o console.cpp
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o editing.o editing.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o entities.o entities.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o main.o main.cpp
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o menus.o menus.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o monster.o monster.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o physics.o physics.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o rendercubes.o rendercubes.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o renderextras.o renderextras.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o rendergl.o rendergl.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o rendermd2.o rendermd2.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o renderparticles.o renderparticles.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o rendertext.o rendertext.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o rndmap.o rndmap.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o savegamedemo.o savegamedemo.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o server.o server.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o serverbrowser.o serverbrowser.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o serverms.o serverms.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o serverutil.o serverutil.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o sound.o sound.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o tools.o tools.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o weapon.o weapon.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o world.o world.cpp
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o worldio.o worldio.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o worldlight.o worldlight.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o worldocull.o worldocull.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o worldrender.o worldrender.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o ../SDK/samples/SoundEngine/Common/AkFileLocationBase.o ../SDK/samples/SoundEngine/Common/AkFileLocationBase.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o ../SDK/samples/SoundEngine/Common/AkMultipleFileLocation.o ../SDK/samples/SoundEngine/Common/AkMultipleFileLocation.cpp
+ 
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common   -c -o ../SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o ../SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.cpp
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/callbacks.o ../enet/callbacks.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/memory.o ../enet/memory.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/protocol.o ../enet/protocol.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/host.o ../enet/host.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/packet.o ../enet/packet.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/unix.o ../enet/unix.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/list.o ../enet/list.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/peer.o ../enet/peer.c
+ 
+cc -I../enet/include -DHAS_SOCKLEN_T   -c -o ../enet/win32.o ../enet/win32.c
+clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses -g -fsigned-char -I../enet/include -I../SDL2/include -I../jpeg-9e -I../SDK/include -I../SDK/samples/SoundEngine/POSIX -I../SDK/samples/SoundEngine/Common -o ../../cube_game/cube_client client.o clientextras.o clientgame.o clients2c.o command.o console.o editing.o entities.o main.o menus.o monster.o physics.o rendercubes.o renderextras.o rendergl.o rendermd2.o renderparticles.o rendertext.o rndmap.o savegamedemo.o server.o serverbrowser.o serverms.o serverutil.o sound.o tools.o weapon.o world.o worldio.o worldlight.o worldocull.o worldrender.o ../SDK/samples/SoundEngine/Common/AkFileLocationBase.o ../SDK/samples/SoundEngine/Common/AkMultipleFileLocation.o ../SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o ../enet/callbacks.o ../enet/memory.o ../enet/protocol.o ../enet/host.o ../enet/packet.o ../enet/unix.o ../enet/list.o ../enet/peer.o ../enet/win32.o  -L/usr/local/lib -L../SDK/Mac/Profile/lib ../jpeg-9e/libjpeg.a -lz -lSDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation -lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral -lAkAACDecoder -lAkSoundSeedWindSource -lAkAudioInputSource -lAkMeterFX -lAkSoundSeedWooshSource -lAkCompressorFX -lAkStereoDelayFX -lAkConvolutionReverbFX -lAkParametricEQFX -lAkDelayFX -lAkPeakLimiterFX -lAkTimeStretchFX -lAkExpanderFX -lAkPitchShifterFX -lAkToneSource -lAkFlangerFX -lAkRoomVerbFX -lAkTremoloFX -lAkGainFX -lAkSilenceSource -lAkVorbisDecoder -lAkGuitarDistortionFX -lAkSineSource -lAkHarmonizerFX -lAkMatrixReverbFX -lAkSoundSeedImpactFX -lAkRecorderFX -lAkSynthOneSource
+ 
+make: Leaving directory `/Users/andrea/coding/cube/cube_source/src'
+ 
