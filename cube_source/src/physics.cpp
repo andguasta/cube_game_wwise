@@ -236,12 +236,12 @@ void moveplayer(dynent *pl, int moveres, bool local, float curtime)
                 if(water) { pl->vel.x /= 8; pl->vel.y /= 8; };      // dampen velocity change even harder, gives correct water feel
 				snd_event("jump", pl);
             }
-            else if(pl->timeinair>800)   // landing after a small jump
+            else if(pl->timeinair>800)   // landing after a big jump
             {
 				sqr *s = S((int)pl->o.x, (int)pl->o.y); //get current vert
                 int current_material = lookupmaterial(s->ftex); //find material on vert
                 snd_setmaterial(pl, current_material); // set material on object
-                snd_event("land_small_jump", pl);
+                snd_event("land_big_jump", pl);
             }
             else if(pl->timeinair > 200) // landing after a small jump
             {
