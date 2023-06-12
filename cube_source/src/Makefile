@@ -8,12 +8,12 @@ CFLAGS=-I../enet/include -DHAS_SOCKLEN_T
 CLIENT_LIBS=-L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib \
 	../jpeg-9e/libjpeg.a -lz -framework SDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation \
 	-lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral \
-	-lAkAACDecoder -lAkSoundSeedWindSource -lAkAudioInputSource -lAkMeterFX -lAkSoundSeedWooshSource \
-	-lAkCompressorFX -lAkStereoDelayFX -lAkConvolutionReverbFX -lAkParametricEQFX \
+	-lAkAACDecoder -lAkAudioInputSource -lAkMeterFX \
+	-lAkCompressorFX -lAkStereoDelayFX -lAkParametricEQFX \
 	-lAkDelayFX -lAkPeakLimiterFX -lAkTimeStretchFX -lAkExpanderFX -lAkPitchShifterFX -lAkToneSource \
 	-lAkFlangerFX -lAkRoomVerbFX -lAkTremoloFX -lAkGainFX -lAkSilenceSource -lAkVorbisDecoder \
 	-lAkGuitarDistortionFX -lAkSineSource -lAkHarmonizerFX \
-	-lAkMatrixReverbFX -lAkSoundSeedImpactFX -lAkRecorderFX -lAkSynthOneSource
+	-lAkMatrixReverbFX -lAkRecorderFX -lAkSynthOneSource
 		
 CLIENT_OBJS= \
 	client.o \
