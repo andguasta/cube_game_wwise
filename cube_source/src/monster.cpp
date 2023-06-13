@@ -235,7 +235,7 @@ void monsteraction(dynent *m)           // main AI thinking routine, called ever
             //conoutf("The Monster %s - Attacking", m->name);
         case M_SEARCH:
             //conoutf("The Monster %s - Searching", m->name);
-            if(std::rand()%100 < 10) {conoutf("The Monster %s - Searching", m->);}
+            if(std::rand()%100 < 10) {conoutf("The Monster %s - Searching", m->name);}
             if(m->trigger<lastmillis) transition(m, M_HOME, 1, 100, 200);
             break;
             
