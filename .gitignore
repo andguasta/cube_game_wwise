@@ -2,6 +2,8 @@
 #soundbanks for the game cube are not committed but folder is included
 /cube_game/soundbanks/*
 !/cube_game/soundbanks/.gitkeep
+/cube_game/Frameworks/*
+!/cube_game/Frameworks/.gitkeep
 
 #This file is written by the game at the end of every game
 /cube_game/config.cfg
