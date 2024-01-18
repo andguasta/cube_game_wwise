@@ -1,12 +1,12 @@
 CXX=clang++ -std=c++11 -Wno-write-strings -fvisibility-inlines-hidden -Wno-narrowing -Wno-int-to-void-pointer-cast -Wno-unsequenced -Wno-parentheses
 WWISESDK=../SDK
 CXXOPTFLAGS=-g -fsigned-char
-CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include -I../SDL2/include -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX \
--I$(WWISESDK)/samples/SoundEngine/Common
+CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include -F ../Frameworks/ -I ../Frameworks/SDL2.framework/Headers -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX \
+-I$(WWISESDK)/samples/SoundEngine/Common -rpath @executable_path/Frameworks
 CFLAGS=-I../enet/include -DHAS_SOCKLEN_T
 
 CLIENT_LIBS=-L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib \
-	../jpeg-9e/libjpeg.a -lz -lSDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation \
+	../jpeg-9e/libjpeg.a -lz -framework SDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation \
 	-lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral \
 	-lAkAACDecoder -lAkSoundSeedWindSource -lAkAudioInputSource -lAkMeterFX -lAkSoundSeedWooshSource \
 	-lAkCompressorFX -lAkStereoDelayFX -lAkConvolutionReverbFX -lAkParametricEQFX \
@@ -83,6 +83,7 @@ standalone.o:
 
 client: $(CLIENT_OBJS) $(ENET_OBJS) 
 	$(CXX) $(CXXFLAGS) -o ../../cube_game/cube_client $(CLIENT_OBJS) $(ENET_OBJS) $(CLIENT_LIBS)
+	cp -r ../Frameworks/SDL2.framework ../../cube_game/Frameworks
 
 server: $(SERVER_OBJS) $(ENET_OBJS)
 	$(CXX) $(CXXFLAGS) -o cube_server $(SERVER_OBJS) $(ENET_OBJS) $(SERVER_LIBS)  
