@@ -1,6 +1,7 @@
 // monster.cpp: implements AI for single player monsters, currently client only
 
 #include "cube.h"
+#include <cstdlib>
 
 dvector monsters;
 int spawnremain, numkilled, monstertotal;
@@ -235,7 +236,7 @@ void monsteraction(dynent *m)           // main AI thinking routine, called ever
             //conoutf("The Monster %s - Attacking", m->name);
         case M_SEARCH:
             //conoutf("The Monster %s - Searching", m->name);
-            if(std::rand()%100 < 10)
+            if(rand()%100 < 10)
             {
                 snd_monsterevent(monstertypes[m->mtype].name, "grunt", m);
             }
