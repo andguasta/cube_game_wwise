@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 1997-2013 Sam Lantinga <slouken@libsdl.org>
+  Copyright (C) 1997-2023 Sam Lantinga <slouken@libsdl.org>
 
   This software is provided 'as-is', without any express or implied
   warranty.  In no event will the authors be held liable for any damages
@@ -25,18 +25,17 @@ quit(int rc)
     exit(rc);
 }
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     int i, done;
     SDL_Event event;
 
-	/* Enable standard application logging */
+    /* Enable standard application logging */
     SDL_LogSetPriority(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO);
 
     /* Initialize test framework */
     state = SDLTest_CommonCreateState(argv, SDL_INIT_VIDEO);
-    if (!state) {
+    if (state == NULL) {
         return 1;
     }
 
@@ -44,11 +43,15 @@ main(int argc, char *argv[])
         int consumed;
 
         consumed = SDLTest_CommonArg(state, i);
+        /* needed voodoo to allow app to launch via OS X Finder */
+        if (SDL_strncmp(argv[i], "-psn", 4)==0) {
+            consumed = 1;
+        }
         if (consumed == 0) {
             consumed = -1;
         }
         if (consumed < 0) {
-            SDL_Log("Usage: %s %s\n", argv[0], SDLTest_CommonUsage(state));
+            SDLTest_CommonLogUsage(state, argv[0], NULL);
             quit(1);
         }
         i += consumed;
@@ -64,24 +67,32 @@ main(int argc, char *argv[])
         SDL_RenderPresent(renderer);
     }
 
+    SDL_EventState(SDL_DROPFILE, SDL_ENABLE);
+
     /* Main render loop */
     done = 0;
     while (!done) {
         /* Check for events */
         while (SDL_PollEvent(&event)) {
-            SDLTest_CommonEvent(state, &event, &done);
-
-            if (event.type == SDL_DROPFILE) {
+            if (event.type == SDL_DROPBEGIN) {
+                SDL_Log("Drop beginning on window %u", (unsigned int)event.drop.windowID);
+            } else if (event.type == SDL_DROPCOMPLETE) {
+                SDL_Log("Drop complete on window %u", (unsigned int)event.drop.windowID);
+            } else if ((event.type == SDL_DROPFILE) || (event.type == SDL_DROPTEXT)) {
+                const char *typestr = (event.type == SDL_DROPFILE) ? "File" : "Text";
                 char *dropped_filedir = event.drop.file;
-                SDL_Log("File dropped on window: %s", dropped_filedir);
-                SDL_free(dropped_filedir);
+                SDL_Log("%s dropped on window %u: %s", typestr, (unsigned int)event.drop.windowID, dropped_filedir);
+                /* Normally you'd have to do this, but this is freed in SDLTest_CommonEvent() */
+                /*SDL_free(dropped_filedir);*/
             }
+
+            SDLTest_CommonEvent(state, &event, &done);
         }
     }
 
     quit(0);
     /* keep the compiler happy ... */
-    return(0);
+    return 0;
 }
 
 /* vi: set ts=4 sw=4 expandtab: */
