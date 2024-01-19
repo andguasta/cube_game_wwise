@@ -22,7 +22,7 @@
 
 static const AkGameObjectID LISTENER_ID = 10001;
 
-#include <AK/Plugin/AllPluginsRegistrationHelpers.h>
+#include <AK/Plugin/AllPluginsFactories.h>
 
 namespace AK
 {
@@ -176,7 +176,7 @@ void snd_loadmapbank()
 	CHECK_SOUND_ENGINE;
 
 	AkBankID bankID;
-	if ( bnkname[0] && SoundEngine::LoadBank(bnkname, AK_DEFAULT_POOL_ID, bankID) != AK_Success)
+	if ( bnkname[0] && SoundEngine::LoadBank(bnkname, bankID) != AK_Success)
 	{
 		bnkname[0] = 0; // so we don't try to unload it
 	}
@@ -203,7 +203,7 @@ void snd_init()
 	// Memory.
     AkMemSettings memSettings;
 	
-	memSettings.uMaxNumPools = 20;
+	MemoryMgr::GetDefaultSettings(memSettings);
 
     // Streaming.
     AkStreamMgrSettings stmSettings;
@@ -218,8 +218,8 @@ void snd_init()
 	SoundEngine::GetDefaultPlatformInitSettings( l_platInitSetings );
 
 	// Setting pool sizes for this game. Here, allow for user content; every game should determine its own optimal values.
-	l_InitSettings.uDefaultPoolSize				=  2*1024*1024;
-	l_platInitSetings.uLEngineDefaultPoolSize	=  4*1024*1024;
+	//l_InitSettings.uDefaultPoolSize				=  2*1024*1024;
+	//l_platInitSetings.uLEngineDefaultPoolSize	=  4*1024*1024;
 
 	AkMusicSettings musicInit;
 	MusicEngine::GetDefaultInitSettings( musicInit );
@@ -283,10 +283,10 @@ void snd_init()
 
 	AkBankID bankID;
 	AKRESULT retValue;
-	retValue = SoundEngine::LoadBank( "Init.bnk", AK_DEFAULT_POOL_ID, bankID );
+	retValue = SoundEngine::LoadBank( "Init.bnk", bankID );
 	assert(retValue == AK_Success);
 
-	retValue = SoundEngine::LoadBank( "main.bnk", AK_DEFAULT_POOL_ID, bankID );
+	retValue = SoundEngine::LoadBank( "main.bnk", bankID );
 	assert(retValue == AK_Success);
 
 

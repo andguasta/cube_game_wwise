@@ -8,21 +8,16 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Fri Jun  3 16:12:55 2022
+# Make data base, printed on Mon Jun 12 21:15:55 2023
 
 # Variables
- 
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LC_CTYPE = UTF-8
-# environment
-VSCODE_LOG_NATIVE = false
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -30,49 +25,44 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/andrea/coding/cube/cube_source/src
+CURDIR := /Users/andrea/_coding/cube/cube_source/src
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-gb","osLocale":"en-it","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
+ 
 # makefile (from `Makefile', line 6)
 CFLAGS = -I../enet/include -DHAS_SOCKLEN_T
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# environment
-HISTCONTROL = ignoreboth:erasedups
 # makefile (from `Makefile', line 4)
-CXXFLAGS = $(CXXOPTFLAGS) -I../enet/include -I../SDL2/include -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX -I$(WWISESDK)/samples/SoundEngine/Common
+CXXFLAGS = $(CXXOPTFLAGS) -I../enet/include -F ../Frameworks/ -I ../Frameworks/SDL2.framework/Headers -I../jpeg-9e -I$(WWISESDK)/include -I$(WWISESDK)/samples/SoundEngine/POSIX -I$(WWISESDK)/samples/SoundEngine/Common -rpath @executable_path/Frameworks
 # environment
-VSCODE_VERBOSE_LOGGING = true
+__CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/w2rm_d8d7kbfzz2r9gwy7n940000gn/T/vscode-ipc-9d266f1d-1da0-44b6-be77-16f1da256d8c.sock
+INFOPATH = /usr/local/share/info:
 # environment
-VSCODE_CWD = /Users/andrea/coding/cube/cube_source/src
-# environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.NyERKNVxiS/Render
+VSCODE_CWD = /
 # makefile (from `Makefile', line 3)
 CXXOPTFLAGS = -g -fsigned-char
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
-# environment
-VSCODE_LOG_STACK = false
+PATH = /usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.x9L6G8hmf5/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.XgkUgOhuEy/Listeners
 # automatic
 %F = $(notdir $%)
 # makefile (from `Makefile', line 8)
-CLIENT_LIBS = -L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib ../jpeg-9e/libjpeg.a -lz -lSDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation -lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral -lAkAACDecoder -lAkSoundSeedWindSource -lAkAudioInputSource -lAkMeterFX -lAkSoundSeedWooshSource -lAkCompressorFX -lAkStereoDelayFX -lAkConvolutionReverbFX -lAkParametricEQFX -lAkDelayFX -lAkPeakLimiterFX -lAkTimeStretchFX -lAkExpanderFX -lAkPitchShifterFX -lAkToneSource -lAkFlangerFX -lAkRoomVerbFX -lAkTremoloFX -lAkGainFX -lAkSilenceSource -lAkVorbisDecoder -lAkGuitarDistortionFX -lAkSineSource -lAkHarmonizerFX -lAkMatrixReverbFX -lAkSoundSeedImpactFX -lAkRecorderFX -lAkSynthOneSource
+CLIENT_LIBS = -L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib ../jpeg-9e/libjpeg.a -lz -framework SDL2 -framework OpenGL -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreFoundation -lAkSoundEngine -lAkMusicEngine -lAkMemoryMgr -lAkStreamMgr -lCommunicationCentral -lAkAACDecoder -lAkAudioInputSource -lAkMeterFX -lAkCompressorFX -lAkStereoDelayFX -lAkParametricEQFX -lAkDelayFX -lAkPeakLimiterFX -lAkTimeStretchFX -lAkExpanderFX -lAkPitchShifterFX -lAkToneSource -lAkFlangerFX -lAkRoomVerbFX -lAkTremoloFX -lAkGainFX -lAkSilenceSource -lAkVorbisDecoder -lAkGuitarDistortionFX -lAkSineSource -lAkHarmonizerFX -lAkMatrixReverbFX -lAkRecorderFX -lAkSynthOneSource
 # environment
-VSCODE_PIPE_LOGGING = true
+PWD = /Users/andrea/_coding/cube/cube_source/src
 # environment
-PWD = /Users/andrea/coding/cube/cube_source/src
+HOMEBREW_CELLAR = /usr/local/Cellar
 # makefile (from `Makefile', line 2)
 WWISESDK = ../SDK
 # environment
@@ -80,17 +70,17 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # makefile (from `Makefile', line 18)
 CLIENT_OBJS = client.o clientextras.o clientgame.o clients2c.o command.o console.o editing.o entities.o main.o menus.o monster.o physics.o rendercubes.o renderextras.o rendergl.o rendermd2.o renderparticles.o rendertext.o rndmap.o savegamedemo.o server.o serverbrowser.o serverms.o serverutil.o sound.o tools.o weapon.o world.o worldio.o worldlight.o worldocull.o worldrender.o $(WWISESDK)/samples/SoundEngine/Common/AkFileLocationBase.o $(WWISESDK)/samples/SoundEngine/Common/AkMultipleFileLocation.o $(WWISESDK)/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o
 # environment
+MANPATH = /usr/local/share/man::
+# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/andrea
 # makefile (from `Makefile', line 55)
 ENET_OBJS = ../enet/callbacks.o ../enet/memory.o ../enet/protocol.o ../enet/host.o ../enet/packet.o ../enet/unix.o ../enet/list.o ../enet/peer.o ../enet/win32.o 
 # default
-MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CLI = 1
-# environment
-VSCODE_CODE_CACHE_PATH = /Users/andrea/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /Users/andrea/Library/Application Support/Code/CachedData/b380da4ef1ee00e224a15c1d4d9793e27c2b6302
 # environment
 LOGNAME = andrea
 # environment
@@ -106,30 +96,27 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 3
+SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = andrea
 # makefile
 .DEFAULT_GOAL := default
-# environment
-TERM_SESSION_ID = 568B7970-0BAC-444B-B781-95247199C7F4
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = Apple_Terminal
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # default
 .VARIABLES := 
 # environment
- 
-TMPDIR = /var/folders/zz/w2rm_d8d7kbfzz2r9gwy7n940000gn/T/
+TMPDIR = /var/folders/dg/f_t_vndd50v6kqj5tzkhc1y40000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/andrea/Library/Application Support/Code/1.67.2-main.sock
+VSCODE_IPC_HOOK = /Users/andrea/Library/Application Support/Code/1.79-main.sock
+# environment
+MallocNanoZone = 0
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -137,15 +124,21 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 421.2
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12522642.12522648
 # environment
-XPC_SERVICE_NAME = 0
+HOMEBREW_PREFIX = /usr/local
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
+HOMEBREW_REPOSITORY = /usr/local/Homebrew
+# environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -169,11 +162,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-VSCODE_PID = 28962
+VSCODE_PID = 2135
 # variable set hash-table stats:
-# Load=79/1024=8%, Rehash=0, Collisions=1/125=1%
+# Load=75/1024=7%, Rehash=0, Collisions=1/121=1%
 
 # Pattern-specific Variable Values
 
@@ -181,7 +172,7 @@ VSCODE_PID = 28962
 
 # Directories
 
-# . (device 16777220, inode 22308486): 77 files, no impossibilities.
+# . (device 16777220, inode 1243945): 77 files, no impossibilities.
 
 # 77 files, no impossibilities in 1 directories.
 
@@ -194,7 +185,7 @@ VSCODE_PID = 28962
 # Not a target:
 rendermd2.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:09
+#  Last modified 2023-06-12 21:14:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -203,7 +194,7 @@ rendermd2.o:
 # Not a target:
 ../enet/host.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -212,7 +203,7 @@ rendermd2.o:
 # Not a target:
 ../SDK/samples/SoundEngine/Common/AkFileLocationBase.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:12
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -221,7 +212,7 @@ rendermd2.o:
 # Not a target:
 savegamedemo.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:10
+#  Last modified 2023-06-12 21:14:20
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -230,7 +221,7 @@ savegamedemo.o:
 # Not a target:
 ../enet/win32.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:24
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -239,7 +230,7 @@ savegamedemo.o:
 # Not a target:
 renderextras.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:09
+#  Last modified 2023-06-12 21:14:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -248,7 +239,7 @@ renderextras.o:
 # Not a target:
 command.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:07
+#  Last modified 2023-06-12 21:14:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -257,7 +248,7 @@ command.o:
 # Not a target:
 editing.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:08
+#  Last modified 2023-06-12 21:14:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -275,12 +266,13 @@ all: client
 # Not a target:
 client.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:06
+#  Last modified 2023-06-12 21:14:16
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ 
 client: client.o clientextras.o clientgame.o clients2c.o command.o console.o editing.o entities.o main.o menus.o monster.o physics.o rendercubes.o renderextras.o rendergl.o rendermd2.o renderparticles.o rendertext.o rndmap.o savegamedemo.o server.o serverbrowser.o serverms.o serverutil.o sound.o tools.o weapon.o world.o worldio.o worldlight.o worldocull.o worldrender.o ../SDK/samples/SoundEngine/Common/AkFileLocationBase.o ../SDK/samples/SoundEngine/Common/AkMultipleFileLocation.o ../SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o ../enet/callbacks.o ../enet/memory.o ../enet/protocol.o ../enet/host.o ../enet/packet.o ../enet/unix.o ../enet/list.o ../enet/peer.o ../enet/win32.o
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `'
@@ -294,7 +286,6 @@ client: client.o clientextras.o clientgame.o clients2c.o command.o console.o edi
 # automatic
 # * := 
 # automatic
- 
 # + := client.o clientextras.o clientgame.o clients2c.o command.o console.o editing.o entities.o main.o menus.o monster.o physics.o rendercubes.o renderextras.o rendergl.o rendermd2.o renderparticles.o rendertext.o rndmap.o savegamedemo.o server.o serverbrowser.o serverms.o serverutil.o sound.o tools.o weapon.o world.o worldio.o worldlight.o worldocull.o worldrender.o ../SDK/samples/SoundEngine/Common/AkFileLocationBase.o ../SDK/samples/SoundEngine/Common/AkMultipleFileLocation.o ../SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o ../enet/callbacks.o ../enet/memory.o ../enet/protocol.o ../enet/host.o ../enet/packet.o ../enet/unix.o ../enet/list.o ../enet/peer.o ../enet/win32.o
 # automatic
 # | := 
@@ -308,12 +299,13 @@ client: client.o clientextras.o clientgame.o clients2c.o command.o console.o edi
 # Load=8/32=25%, Rehash=0, Collisions=9/23=39%
 #  commands to execute (from `Makefile', line 85):
 	$(CXX) $(CXXFLAGS) -o ../../cube_game/cube_client $(CLIENT_OBJS) $(ENET_OBJS) $(CLIENT_LIBS)
+	cp -r ../Frameworks/SDL2.framework ../../cube_game/Frameworks
 	
 
 # Not a target:
 weapon.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:54:55
+#  Last modified 2023-06-12 21:14:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -322,7 +314,7 @@ weapon.o:
 # Not a target:
 worldio.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:12
+#  Last modified 2023-06-12 21:14:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -331,7 +323,7 @@ worldio.o:
 # Not a target:
 rndmap.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:10
+#  Last modified 2023-06-12 21:14:20
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -340,7 +332,7 @@ rndmap.o:
 # Not a target:
 physics.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:08
+#  Last modified 2023-06-12 21:14:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -349,7 +341,7 @@ physics.o:
 # Not a target:
 serverms.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:10
+#  Last modified 2023-06-12 21:14:21
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -358,7 +350,7 @@ serverms.o:
 # Not a target:
 ../SDK/samples/SoundEngine/Common/AkMultipleFileLocation.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:12
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -367,8 +359,7 @@ serverms.o:
 # Not a target:
 rendergl.o:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-05-27 16:33:09
+#  Last modified 2023-06-12 21:14:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -377,7 +368,7 @@ rendergl.o:
 # Not a target:
 worldocull.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:12
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -386,7 +377,7 @@ worldocull.o:
 # Not a target:
 rendercubes.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:09
+#  Last modified 2023-06-12 21:14:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -395,7 +386,7 @@ rendercubes.o:
 # Not a target:
 ../enet/list.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:24
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -404,7 +395,7 @@ rendercubes.o:
 # Not a target:
 clientgame.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:07
+#  Last modified 2023-06-12 21:14:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -413,7 +404,7 @@ clientgame.o:
 # Not a target:
 world.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:11
+#  Last modified 2023-06-12 21:14:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -428,7 +419,7 @@ world.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-19 10:23:03
+#  Last modified 2023-01-20 20:34:59
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -437,16 +428,17 @@ Makefile:
 # Not a target:
 clientextras.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:07
+#  Last modified 2023-06-12 21:14:16
 #  File has been updated.
 #  Successfully updated.
+ 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 sound.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:54:54
+#  Last modified 2023-06-12 21:14:21
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -455,7 +447,7 @@ sound.o:
 # Not a target:
 server.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:10
+#  Last modified 2023-06-12 21:14:20
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -465,14 +457,14 @@ server: standalone.o serverms.o server.o tools.o ../enet/callbacks.o ../enet/mem
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 88):
+#  commands to execute (from `Makefile', line 89):
 	$(CXX) $(CXXFLAGS) -o cube_server $(SERVER_OBJS) $(ENET_OBJS) $(SERVER_LIBS)  
 	
 
 # Not a target:
 ../enet/unix.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:24
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -481,7 +473,7 @@ server: standalone.o serverms.o server.o tools.o ../enet/callbacks.o ../enet/mem
 # Not a target:
 console.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:07
+#  Last modified 2023-06-12 21:14:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -490,7 +482,7 @@ console.o:
 # Not a target:
 ../enet/callbacks.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -499,7 +491,7 @@ console.o:
 # Not a target:
 renderparticles.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:09
+#  Last modified 2023-06-12 21:14:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -508,7 +500,7 @@ renderparticles.o:
 # Not a target:
 worldrender.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:12
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -517,17 +509,16 @@ worldrender.o:
 # Not a target:
 ../enet/memory.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 # Not a target:
 rendertext.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:10
+#  Last modified 2023-06-12 21:14:20
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -549,7 +540,7 @@ standalone.o:
 # Not a target:
 ../enet/packet.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -558,7 +549,7 @@ standalone.o:
 # Not a target:
 entities.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:54:54
+#  Last modified 2023-06-12 21:14:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -573,7 +564,7 @@ entities.o:
 # Not a target:
 ../enet/protocol.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -591,7 +582,7 @@ clean:
 # Not a target:
 ../enet/peer.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:24
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -600,7 +591,7 @@ clean:
 # Not a target:
 serverutil.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:11
+#  Last modified 2023-06-12 21:14:21
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -609,7 +600,7 @@ serverutil.o:
 # Not a target:
 worldlight.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:12
+#  Last modified 2023-06-12 21:14:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -618,7 +609,7 @@ worldlight.o:
 # Not a target:
 monster.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:08
+#  Last modified 2023-06-12 21:14:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -627,7 +618,7 @@ monster.o:
 # Not a target:
 ../SDK/samples/SoundEngine/POSIX/AkDefaultIOHookBlocking.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:13
+#  Last modified 2023-06-12 21:14:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -636,7 +627,7 @@ monster.o:
 # Not a target:
 main.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:08
+#  Last modified 2023-06-12 21:14:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -645,7 +636,7 @@ main.o:
 # Not a target:
 clients2c.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:07
+#  Last modified 2023-06-12 21:14:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -654,7 +645,7 @@ clients2c.o:
 # Not a target:
 menus.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:08
+#  Last modified 2023-06-12 21:14:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -663,7 +654,7 @@ menus.o:
 # Not a target:
 serverbrowser.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:10
+#  Last modified 2023-06-12 21:14:20
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -672,12 +663,12 @@ serverbrowser.o:
 # Not a target:
 tools.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 16:33:11
+#  Last modified 2023-06-12 21:14:22
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
 
 # files hash-table stats:
 # Load=53/1024=5%, Rehash=0, Collisions=4/126=3%
@@ -692,6 +683,6 @@ tools.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jun  3 16:12:55 2022
+# Finished Make data base on Mon Jun 12 21:15:55 2023
 
  

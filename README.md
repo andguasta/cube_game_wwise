@@ -11,3 +11,4 @@ This repo improves the Audiokinetic Cube Demo (2019.1) adding more features and 
 - Added a new switch called ```weapon_type``` that sets the type of weapon currently selected.
 - Added additional sound materials for some surfaces and a submenu in the game loadmap with the updated maps
 - Added a new Game Parameter called ```bullet_number``` that inform the audio engine of the number of bullet left for the currently selected weapon
+- The monsters now launch the Grunt event when they are searching for the player: example: ```Grunt_Hellping```
