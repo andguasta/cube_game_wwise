@@ -12,7 +12,6 @@ CLIENT_LIBS=-L/usr/local/lib -L$(WWISESDK)/Mac/Profile/lib \
 	-lAkSoundEngine \
 	-lAkMusicEngine \
 	-lCommunicationCentral \
-	-lAkSoundEngine \
 	-lAkCompressorFX \
 	-lAkDelayFX \
 	-lAkExpanderFX \

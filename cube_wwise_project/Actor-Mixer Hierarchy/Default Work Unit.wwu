@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{8A813850-131C-41F2-85DD-7DC7D39F4130}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{8A813850-131C-41F2-85DD-7DC7D39F4130}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{8A813850-131C-41F2-85DD-7DC7D39F4130}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8A813850-131C-41F2-85DD-7DC7D39F4130}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="silence" ID="{16B790F1-98D8-4F9F-8C03-637A5ABD4311}" ShortID="1017562190">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8405651-2DD2-44D4-A92D-79ACA863F640}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4258C645-CCCC-4A46-B5FF-226AB6F5F9FB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Wwise Silence" ID="{DC6C2A6F-7AAF-4565-920C-3AADF29A4993}" ShortID="926304901" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Wwise Silence" ID="{DC6C2A6F-7AAF-4565-920C-3AADF29A4993}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

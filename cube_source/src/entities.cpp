@@ -81,6 +81,7 @@ void radditem(int i, int &v)
     ents[i].spawned = false;
     v += is.add;
     if(v>is.max) v = is.max;
+    snd_update_armour(player1);
     snd_clientevent(is.event);
 };
 
