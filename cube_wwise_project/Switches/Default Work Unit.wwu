@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{0DB865AC-36E1-4B45-8EFA-B546403F30E3}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{0DB865AC-36E1-4B45-8EFA-B546403F30E3}" SchemaVersion="97">
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{0DB865AC-36E1-4B45-8EFA-B546403F30E3}" PersistMode="Standalone">
 			<ChildrenList>
@@ -36,7 +36,6 @@
 				</SwitchGroup>
 				<SwitchGroup Name="weapon_type" ID="{26643D4C-C57C-4459-9BD5-F37AF71232BF}">
 					<ChildrenList>
-						<Switch Name="New_Switch" ID="{B638F196-460F-4EE2-B779-DF8716E0EA32}"/>
 						<Switch Name="fist" ID="{C8274731-B0EB-4A8A-984A-87E24B164707}"/>
 						<Switch Name="shotgun" ID="{A3687A9E-6730-474E-B844-2C1B75CB9E73}"/>
 						<Switch Name="chaingun" ID="{1085D1CB-D1C3-454A-88B2-E7E49D4E8A79}"/>

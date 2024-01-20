@@ -564,6 +564,10 @@ void snd_update_bullets(dynent* g_object)
 	snd_setrtpc("bullet_number", g_object->ammo[g_object->gunselect], g_object);
 }
 
+void snd_update_armour(dynent* g_object)
+{
+	snd_setrtpc("armour_amount", g_object->armour, g_object);
+}
 
 //
 // sound-related scripting commands

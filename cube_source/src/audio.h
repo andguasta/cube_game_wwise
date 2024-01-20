@@ -21,4 +21,6 @@ void snd_setrtpc(char* rtpc_name, float value, dynent* g_object);
 
 void snd_update_bullets(dynent* g_object);
 
+void snd_update_armour(dynent* g_object);
+
 char* getWeaponName(int gunNumber);

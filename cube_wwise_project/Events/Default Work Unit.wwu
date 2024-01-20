@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{23FA1438-4CCA-475E-A2B7-8785911E3DF2}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{23FA1438-4CCA-475E-A2B7-8785911E3DF2}" SchemaVersion="97">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{23FA1438-4CCA-475E-A2B7-8785911E3DF2}" PersistMode="Standalone">
 			<ChildrenList>
@@ -8,7 +8,17 @@
 				<Event Name="land_small_jump" ID="{76665E0B-B380-482C-A98F-098E9E627B33}"/>
 				<Event Name="land_big_jump" ID="{D1179CB5-F602-4412-B243-7E007E214F2F}"/>
 				<Event Name="spawn_monster" ID="{4DA533EF-91A1-429E-8863-75913B0B3CBD}"/>
-				<Event Name="spawn_player" ID="{F593E529-E90A-4CEA-8371-7D7538764ED7}"/>
+				<Event Name="spawn_player" ID="{F593E529-E90A-4CEA-8371-7D7538764ED7}">
+					<ChildrenList>
+						<Action Name="" ID="{51A8CDD7-9376-46E4-B9BB-F8A8F7BF27DA}" ShortID="750095543">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="silence" ID="{16B790F1-98D8-4F9F-8C03-637A5ABD4311}" WorkUnitID="{8A813850-131C-41F2-85DD-7DC7D39F4130}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

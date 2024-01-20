@@ -119,6 +119,8 @@ void spawnstate(dynent *d)              // reset player state not persistent acc
     {
         d->ammo[GUN_SG] = 25;
     };
+    snd_update_bullets(d);
+    snd_update_armour(d);
 };
     
 dynent *newdynent( int in_state, char * in_name )                 // create a new blank player or monster
@@ -406,6 +408,8 @@ void selfdamage(int damage, int actor, dynent *act)
     damage -= ad;
     float droll = damage*2.f;
     
+    snd_update_armour(player1);
+
 	// give player a kick depending on amount of damage
     player1->roll += player1->roll>0 ? droll : (player1->roll<0 ? -droll : (rnd(2) ? droll : -droll));  
 
