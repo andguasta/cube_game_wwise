@@ -19,6 +19,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="itemammo_shotgun" ID="{C0D6562B-9FA9-4000-85E0-739D09394B46}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

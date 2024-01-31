@@ -89,10 +89,22 @@ void realpickup(int n, dynent *d)
 {
     switch(ents[n].type)
     {
-        case I_SHELLS:  radditem(n, d->ammo[1]); break;
-        case I_BULLETS: radditem(n, d->ammo[2]); break;
-        case I_ROCKETS: radditem(n, d->ammo[3]); break;
-        case I_ROUNDS:  radditem(n, d->ammo[4]); break;
+        case I_SHELLS: 
+            radditem(n, d->ammo[1]);
+            snd_event("itemammo_shotgun", d);
+            break;
+        case I_BULLETS:
+            radditem(n, d->ammo[2]);
+            snd_event("itemammo_chaingun", d);
+            break;
+        case I_ROCKETS:
+            radditem(n, d->ammo[3]);
+            snd_event("itemammo_rocket", d);
+            break;
+        case I_ROUNDS: 
+            radditem(n, d->ammo[4]);
+            snd_event("itemammo_rifle", d);
+            break;
         case I_HEALTH:  radditem(n, d->health);  break;
         case I_BOOST:   radditem(n, d->health);  break;
 
