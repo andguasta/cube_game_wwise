@@ -13,3 +13,4 @@ This repo improves the Audiokinetic Cube Demo (2019.1) adding more features and 
 - Added a new Game Parameter called ```bullet_number``` that inform the audio engine of the number of bullet left for the currently selected weapon
 - The monsters now launch the Grunt event when they are searching for the player: example: ```Grunt_Hellping```
 - Added a new Game Parameter called ```armour_amount``` that inform the audio engine of amount of armour left
+- Fixed `Teleport` event that was always posted on game object `local player` even if it was launched by a monster

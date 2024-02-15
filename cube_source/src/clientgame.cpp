@@ -119,8 +119,11 @@ void spawnstate(dynent *d)              // reset player state not persistent acc
     {
         d->ammo[GUN_SG] = 25;
     };
-    snd_update_bullets(d);
-    snd_update_armour(d);
+    if (d->GetMonsterState() == M_NONE)
+    {
+        snd_update_bullets(d);
+        snd_update_armour(d);
+    }
 };
     
 dynent *newdynent( int in_state, char * in_name )                 // create a new blank player or monster
@@ -150,10 +153,12 @@ dynent *newdynent( int in_state, char * in_name )                 // create a ne
     d->lifesequence = 0;
     d->state = CS_ALIVE;
 	d->lastanimframe = -1;
-    spawnstate(d);
 
 	if ( in_state != M_SLEEP ) // sleeping monsters are registered only when they first move
-		snd_registent( d, in_name );
+	{
+        snd_registent( d, in_name );
+    }
+    spawnstate(d);
 
 	return d;
 };

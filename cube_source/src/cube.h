@@ -139,6 +139,7 @@ struct dynent                           // players & monsters
     bool attacking;
     bool blocked, moving;               // used by physics to signal ai
     bool registered;					// registered in sound engine
+    long long last_grunt;
     string name, team;
 
 	void SetMonsterState( int in_state );

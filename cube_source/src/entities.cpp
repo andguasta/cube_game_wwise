@@ -158,7 +158,7 @@ void teleport(int n, dynent *d)     // also used by monsters
             d->pitch = 0;
             d->vel.x = d->vel.y = d->vel.z = 0;
             entinmap(d);
-            snd_clientevent(AK::EVENTS::TELEPORT);
+            snd_event(AK::EVENTS::TELEPORT, d);
             break;
         };
     };

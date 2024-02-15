@@ -2,6 +2,7 @@
 
 #include "cube.h"
 #include <cstdlib>
+#include <chrono>
 
 dvector monsters;
 int spawnremain, numkilled, monstertotal;
@@ -81,6 +82,7 @@ dynent *basicmonster(int type, int yaw, int state, int trigger, int move)
     m->armour = 0;
     loopi(NUMGUNS) m->ammo[i] = 10000;
     m->anger = 0;
+    m->last_grunt = 30;
     strcpy_s(m->name, t->nicename);
     monsters.add(m);
     snd_setswitch("entity", monstertypes[type].name, m); //update audio engine on the type of monster
@@ -236,9 +238,19 @@ void monsteraction(dynent *m)           // main AI thinking routine, called ever
             //conoutf("The Monster %s - Attacking", m->name);
         case M_SEARCH:
             //conoutf("The Monster %s - Searching", m->name);
-            if(rand()%100 < 10)
+            if(rand()%100 < 4)
             {
-                snd_monsterevent(monstertypes[m->mtype].name, "grunt", m);
+                auto now = std::chrono::system_clock::now();
+                auto duration = now.time_since_epoch();
+                auto seconds = std::chrono::duration_cast<std::chrono::seconds>(duration).count();
+
+                if ((seconds - m->last_grunt) > (rand()%30) + 30)
+                {
+                    snd_monsterevent(monstertypes[m->mtype].name, "grunt", m);                    
+                    //printf("TIME--->%lld\n", seconds);
+                    m->last_grunt = seconds;
+                }
+                
             }
             if(m->trigger<lastmillis) transition(m, M_HOME, 1, 100, 200);
             break;
@@ -262,8 +274,7 @@ void monsteraction(dynent *m)           // main AI thinking routine, called ever
 					snd_registent( m, entname );
 					snd_event( AK::EVENTS::SPAWN_MONSTER, m );
 					m->registered = true;
-				}
-				snd_monsterevent( monstertypes[m->mtype].name, "grunt", m );
+				}				
 	           };
             break;
         };

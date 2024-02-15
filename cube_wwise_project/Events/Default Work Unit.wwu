@@ -20,6 +20,7 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="itemammo_shotgun" ID="{C0D6562B-9FA9-4000-85E0-739D09394B46}"/>
+				<Event Name="teleport" ID="{52087B35-3121-4985-9C31-A46E0A7B7898}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
